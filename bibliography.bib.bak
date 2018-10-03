@@ -184,8 +184,9 @@
 @Article{DeepLearningBlogNeo,
   author  = {Carlos García Moreno},
   title   = {¿Qué es el Deep Learning y para qué sirve?},
-  journal = {Blog Neo https://www.indracompany.com/es/blogneo/deep-learning-sirve},
+  journal = {Blog Neo},
   year    = {2016},
+  url     = {https://www.indracompany.com/es/blogneo/deep-learning-sirve},
 }
 
 @Electronic{Dlib,
@@ -196,6 +197,19 @@
 @Electronic{WebTestPython,
   title = {Testing Applications with WebTest},
   url   = {http://webtest.pythonpaste.org/en/latest/index.html},
+}
+
+@Electronic{osLibrary,
+  title = {os — Miscellaneous operating system interfaces},
+  url   = {https://docs.python.org/2/library/os.html},
+}
+
+@Electronic{IoCContainerSpring,
+  title = {The IoC container},
+  url   = {https://docs.spring.io/spring/docs/3.2.x/spring-framework-reference/html/beans.htmlhttps://docs.spring.io/spring/docs/3.2.x/spring-framework-reference/html/beans.html},
+}
+
+@Electronic{IoCContainerBaeldung,
 }
 
 @Comment{jabref-meta: databaseType:bibtex;}

@@ -313,13 +313,23 @@ Para la realización de este TFG se han desarrollado dos servicios REST.
  usuario sobre las publicaciones que realiza en la aplicación.
  Ambos servicios utilizan una Base de Datos MySQL y se apoyan en el estandar
  HTTP.
- Se encuentran desplegados en un Servidor Virtual Privado, y están cifrados
- con certificados SSL.
+ Se encuentran desplegados en un Servidor Virtual Privado, y los dominios
+ están cifrados con certificados SSL.
 \end_layout
 
 \begin_layout Standard
-La totalidad de la aplicación está subida a GitHub y es posible acceder
- a ella en esta dirección 
+La totalidad de la aplicación está subida a GitHub en este enlace: 
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+https://github.com/PatriciadeGregorio/TFG_Back
+\end_layout
+
+\end_inset
+
+ y es posible acceder a ella en esta dirección: 
 \begin_inset Flex URL
 status open
 
@@ -334,7 +344,7 @@ https://artvify.es
  De todas formas, en esta dirección se encuentra la interfaz de usuario
  realizada en el TFG mencionado anteriormente, si se quiere acceder a cualquiera
  de los dos servicios desarrollados en este TFG basta con acceder a esta
- dirección 
+ dirección: 
 \begin_inset Flex URL
 status open
 
@@ -346,7 +356,7 @@ https://artvify.es/api/
 \end_inset
 
  en el caso del servicio que se encarga de la lógica de la aplicación o
- a esta dirección 
+ a esta dirección: 
 \begin_inset Flex URL
 status open
 
@@ -361,8 +371,8 @@ https://artvify.es/py/
 \end_layout
 
 \begin_layout Standard
-Al final se ha conseguido tener dos servicios REST que se encargan de atender
- peticiones HTTP realizadas por el lado cliente.
+Al final de este proyecto se ha conseguido tener dos servicios REST que
+ se encargan de atender peticiones HTTP realizadas por el lado cliente.
  Ambos servicios mantiene la persistencia de la aplicación gracias a una
  Base de Datos la cual se encuentra alojada en el mismo servidor que los
  servicios.
@@ -436,7 +446,7 @@ Como consecuencia, la búsqueda de documentación de las herramientas utilizadas
 Además, a parte de esto, se pretende presentar una red social que aporte
  algo más de lo que aportan redes sociales conocidas como Twitter o Instagram.
  Ambas dos, dan la posibilidad de realizar publicaciones que incluyen fotos,
- pero en ultima instancia el usuario es el que indica quien aparece en dichas
+ pero en última instancia el usuario es el que indica quien aparece en dichas
  fotos.
  En este TFG se quiere realizar sugerencias acerca de las fotos que sube
  el usuario a la red social.
@@ -444,7 +454,7 @@ Además, a parte de esto, se pretende presentar una red social que aporte
 
 \begin_layout Standard
 Con respecto a lo que se hablaba en el párrafo anterior y coincidiendo con
- la asignatura de Visión Artificial realizada este ultimo año de carrera,
+ la asignatura de Visión Artificial realizada este último año de carrera,
  se quiere incluir la posibilidad de que el sistema sea capaz de realizar
  sugerencias sobre quién aparece en la publicación que el usuario sube.
  Además, el sistema debe ser capaz de aprender de ello y cuanta más actividad
@@ -479,9 +489,8 @@ Actualmente existen multitud de herramientas informáticas que se encarguen
  PHP, muchas veces viene preinstalado en la mayoría de sistemas.
  Además, para desarrollar en el lado servidor se suele utilizar un framework
  de PHP.
- Uno de los más famosos es CakePHP, proporciona una arquitectura MVC, es
- de código abierto y además había trabajado con ello durante el tiempo suficient
-e como para tener cierta soltura.
+ Uno de los más famosos es CakePHP, proporciona una arquitectura MVC y es
+ de código abierto.
  CakePHP provee de capas de abstracción con respecto a las consultas contra
  la Base de Datos, para la gestión de errores, para la conexión entre modelo
  y vista.
@@ -493,8 +502,8 @@ e como para tener cierta soltura.
 Es necesario nombrar a Java, lenguaje fuertemente tipado y orientado a objetos.
  Ahora bien, si queremos hablar de Java y de lado servidor o lógica de la
  aplicación web hay que hablar de Spring Framework.
- Es el framework mas antiguo en este campo, pero sigue siendo a día de hoy
- el mas popular entre los desarrolladores web.
+ Es de los framework mas antiguos en este campo, pero sigue siendo a día
+ de hoy el mas popular entre los desarrolladores web.
  Consta de módulos que facilitan el trabajo a los desarrolladores.
  Antes de hablar a fondo sobre los módulos de Spring framework, es necesario
  hablar de Spring en si.
@@ -527,17 +536,17 @@ literal "false"
 
 .
  Pero, a fin de cuentas, las dos herramientas tienen la misma finalidad.
- Posteriormente se procede al desarrollo de la aplicación web y por ultimo
+ Posteriormente se procede al desarrollo de la aplicación web y por último
  para que la aplicación esté al servicio del cliente, es necesario el despliegue
  en un servidor.
 \end_layout
 
 \begin_layout Standard
 Spring Framework, da la posibilidad de la creación de controladores utilizando
- las anotaciones, entre otras funcionalidad.
+ las anotaciones, entre otras funcionalidades.
  Las anotaciones son directrices para controlar el comportamiento de Spring.
  Dichas anotaciones comienzan por el símbolo '@' seguido de la directiva
- que se dese ejecutar.
+ que se desee ejecutar.
  Spring Framework 
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -576,7 +585,7 @@ literal "false"
 
 : Antes se ha hablado de que existen tres pasos a seguir para el desarrollo
  del lado servidor.
- El modulo Spring Boot de Spring Framework se encarga de simplificar esos
+ El módulo Spring Boot de Spring Framework se encarga de simplificar esos
  pasos.
  Es decir, a fin de cuentas los pasos 1 y 3 no requieren del desarrollador
  para ser ejecutados.
@@ -602,9 +611,9 @@ literal "false"
 
 \end_inset
 
-: Este modulo hace referencia al Modelo-Vista-Controlador.
- Es el modulo más antiguo de Spring, fue de los primeros en incluirse.
- Y se puede intuir que fue el modulo que introdujo la arquitectura MVC.
+: Este módulo hace referencia al Modelo-Vista-Controlador.
+ Es el módulo más antiguo de Spring, fue de los primeros en incluirse.
+ Fue el módulo que introdujo la arquitectura MVC.
 \end_layout
 
 \begin_layout Itemize
@@ -647,35 +656,31 @@ Por otra parte tenemos Python, lenguaje de programación bastante sencillo,
 
 \begin_layout Standard
 Django es posiblemente el framework de referencia si se decide utilizar
- Python para el desarrollo de la lógica de la aplicación web.
+ Python para el desarrollo de la lógica de una aplicación web.
  Proporciona arquitectura MVC, es de código abierto y proporciona herramientas
  que ayudan a la autenticación en la aplicación web.
  Por otro lado, tenemos Flask, sigue el mismo camino que Django, se trata
  de un framework de Python basado en Werkzeug y Jinja2.
- Werkzeug es una librería de utilidades para WSGI de Python y Jinja2 es
+ Werkzeug es una biblioteca de utilidades para WSGI de Python y Jinja2 es
  un motor de sistemas de plantillas inspirado en Django.
  Por ultimo, tenemos Bottle.
- Bottle es bastante parecido a Flask y es el enfoque que yo he utilizado
- para el desarrollo de parte de la aplicación.
+ Bottle es bastante parecido a Flask.
  Es un microframework (al igual que Flask) basado en WSGI que sigue también
  la arquitectura MVC.
- En anteriores secciones he mencionado que tenia como objetivo incluir alguna
- mejora para la lógica de la aplicación web.
 \end_layout
 
 \begin_layout Standard
 En otro orden de cosas, Python también se ha utilizado para la Visión Artificial
 , en concreto existen bibliotecas para el desarrollo de la Visión Artificial
  en Python.
- 
 \end_layout
 
 \begin_layout Standard
 En primer lugar, se tiene OpenCV, biblioteca de código abierto, tiene interfaces
  en Java, Python y C++, además de estar soportado en Windows, Linux y Mac
  OS.
- Esta biblioteca esta desarrollada en C/C++, por lo que da la posibilidad
- de tomar ventaja del procesamiento con multiples nucleos.
+ Esta biblioteca está desarrollada en C/C++, por lo que da la posibilidad
+ de tomar ventaja del procesamiento con múltiples núcleos.
  Esta biblioteca cuenta con una gran popularidad entre los desarrolladores
  como corrobora su propio equipo de desarrollo 
 \begin_inset CommandInset citation
@@ -850,9 +855,9 @@ Por último, tenemos JavaScript, lenguaje sencillo bastante parecido a Java,
  hablar de NodeJS.
  NodeJS es un entorno en tiempo de ejecución en JavaScript en el lado del
  servidor.
- Este entorno por si solo es pLógica de la aplicación webosibLógica de la
- aplicación weble que tenga menos utilidad que los frameworks que se han
- nombrado anteriormente, pero es una gran base para un framework web.
+ Este entorno por si solo no es que tenga menos utilidad que los frameworks
+ que se han nombrado anteriormente, pero es una gran base para un framework
+ web.
  La lógica a la hora de desarrollar el lado servidor no es diferente al
  que se usa en las herramientas anteriores.
  La diferencia reside en la facilidad que proporciona JavaScript a la hora
@@ -878,8 +883,9 @@ Este trabajo tiene como objetivo principal, el desarrollo de un servicio
 \begin_layout Itemize
 Proporcionar al lado cliente una serie de servicios que le provea los recursos
  que necesita para: gestionar usuarios, gestionar el inicio de sesión y
- el registro de los usuarios, gestionar la realización de publicaciones
- y gestionar la realización de comentarios en las publicaciones.
+ el registro de los usuarios, gestionar la realización de publicaciones,
+ realizar sugerencias a los usuarios y gestionar la realización de comentarios
+ en las publicaciones.
 \end_layout
 
 \begin_layout Itemize
@@ -889,7 +895,7 @@ Proporcionar al lado cliente una documentación consistente acerca de la
 \end_layout
 
 \begin_layout Itemize
-Introducir una funcionalidad de visión artificial que permita realizar sugerenci
+Introducir una funcionalidad de Visión Artificial que permita realizar sugerenci
 as a los usuarios sobre las publicaciones que realiza.
 \end_layout
 
@@ -904,13 +910,13 @@ Desarrollar un esquema de base de datos.
 \end_layout
 
 \begin_layout Itemize
-Desarrollar un sistema de visión artificial que permita el reconocimiento
+Desarrollar un sistema de Visión Artificial que permita el reconocimiento
  facial en las personas que aparezcan en las fotos subidas a la red social.
  
 \end_layout
 
 \begin_layout Itemize
-Desarrollar un servicio para el sistema de visión artificial de reconocimiento
+Desarrollar un servicio para el sistema de Visión Artificial de reconocimiento
  facial.
  
 \end_layout
@@ -920,17 +926,17 @@ Realizar pruebas de los servicio desarrollados.
 \end_layout
 
 \begin_layout Itemize
-Entender en profundidad lo que significa desarrollar un software desde cero
+Entender en profundidad lo que significa desarrollar un software desde cero.
 \end_layout
 
 \begin_layout Itemize
 Tener un entorno en local para el desarrollo y un entorno en producción
- para probar lo desarrollado de cara al cliente
+ para probar lo desarrollado de cara al cliente.
 \end_layout
 
 \begin_layout Itemize
 Búsqueda y uso de herramientas que hagan posible la realización de los objetivos
- nombrados hasta ahora
+ nombrados hasta ahora.
 \end_layout
 
 \begin_layout Section
@@ -968,7 +974,7 @@ Capítulo 4
 \series default
 : Capítulo de experimentos, pruebas y métricas.
  En este capítulo se explican las métricas que se han acumulado durante
- el desarrollo del proyecto
+ el desarrollo del proyecto.
 \end_layout
 
 \begin_layout Itemize
@@ -1006,7 +1012,7 @@ Documento de especificación de requisitos.
 Antes de empezar a enumerar los requisitos y a presentar una serie de aclaracion
 es con respecto a ellos, es necesario aclarar varios conceptos.
  Como introducción a los requisitos cabe destacar que el sistema que especifico
- es un servicio y de la implentación correspondiente.
+ es un servicio y de la implementación correspondiente.
  Concretamente este servicio tiene dos partes, por una parte se tiene un
  servicio de gestión de la funcionalidad y lógica de la aplicación y por
  otra un servicio encargado del reconocimiento facial.
@@ -1018,7 +1024,7 @@ Requisitos funcionales
 
 \begin_layout Standard
 Se creyó conveniente separar los requisitos por secciones, al igual que
- la API separa los servicios que ofrece por controladores.
+ los servicios separa la funcionalidad que ofrece por controladores.
 \end_layout
 
 \begin_layout Subsubsection
@@ -1102,12 +1108,6 @@ Requisito que hacer referencia a eliminar todos los usuarios de la Base
 \end_layout
 
 \end_deeper
-\begin_layout Standard
-Cabe destacar que el requisito RF02.U y RF06.U están sujeto a restricciones
- dado que son agujeros de seguridad.
- Solo podrán hacer uso de dichas funcionalidades los administradores.
-\end_layout
-
 \begin_layout Subsubsection
 Requisitos relacionados con las publicaciones
 \end_layout
@@ -1188,12 +1188,6 @@ Requisito que hace referencia a eliminar todas las publicaciones de la Base
 \end_layout
 
 \end_deeper
-\begin_layout Standard
-Los requisitos RF02.U y RF06.U están sujetos a restricciones, dado que son
- agujeros de seguridad.
- Solo podrán hacer uso de dichas funcionalidades los administradores
-\end_layout
-
 \begin_layout Subsubsection
 Requisitos relacionados con los comentarios
 \end_layout
@@ -1273,12 +1267,6 @@ Requisito que hace referencia a eliminar todos los comentarios de la Base
 \end_layout
 
 \end_deeper
-\begin_layout Standard
-Los requisitos RF02.C y RF06.C están sujetos a restricciones, dado que son
- agujeros de seguridad.
- Solo podrán hacer uso de dichas funcionalidades los administradores
-\end_layout
-
 \begin_layout Subsubsection
 Requisitos relacionados con la búsqueda de usuarios dado un determinado
  criterio.
@@ -1451,19 +1439,6 @@ Requisito que hace referencia a, dado un nombre de usuario y una contraseña,
 \begin_layout Itemize
 
 \series bold
-RF02.LR: Cerrar sesión
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-Requisito que hace referencia a poder cerrar la sesión de un determinado
- usuario.
-\end_layout
-
-\end_deeper
-\begin_layout Itemize
-
-\series bold
 RF03.LR: Registrar a un determinado usuario
 \end_layout
 
@@ -1612,7 +1587,8 @@ RNF05: Concordancia con respecto al estándar HTTP
 
 \begin_deeper
 \begin_layout Itemize
-Este requisito está implícito en la definición de una API REST.
+Dado que los dos servicios a desarrollar son API REST, este requisito está
+ implícito en la definición de una API REST.
  
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -1750,7 +1726,7 @@ RNF11: Escalibilidad
 \begin_deeper
 \begin_layout Itemize
 Requisito que hace referencia a que el servicio sea capaz de escalar debidamente
-, por ejemplo para incorporar mas funcionalidades, ser capaz de almacenar
+, por ejemplo para incorporar más funcionalidades, ser capaz de almacenar
  mas información, atender peticiones desde diferentes orígenes, etc.
 \end_layout
 
@@ -2018,7 +1994,7 @@ Para que fuese posible el despliegue del servicio encargado de la gestión
  Tomcat provee un administrador donde poder ver las aplicaciones que se
  tienen desplegadas y su ruta de acceso.
  Por eso, mientras que en el local, durante el desarrollo en local de la
- aplicación se accede a la propia maquina (http://localhost:8080), en producción
+ aplicación se accede a la propia máquina (http://localhost:8080), en producción
  se accede al servicio a través de la IP remota del VPS, apuntando al puerto
  correspondiente y haciendo referencia a la aplicación web desplegada (http://IP
 :8080/APP).
@@ -2029,7 +2005,7 @@ Para que fuese posible el despliegue del servicio encargado de la gestión
 \end_layout
 
 \begin_layout Subsubsection*
-Python, Anaconda y librerías
+Python, Anaconda y bibliotecas
 \end_layout
 
 \begin_layout Standard
@@ -2037,19 +2013,57 @@ Ya se ha hablado de que se tiene como objetivo incluir una mejora a la aplicaci�
 n web que tenga relación con la Visión Virtual.
  Y: ¿qué es la Visión Artificial sin Python? Cabe destacar que el VPS tenia
  Python instalado.
- Cambien hay que destacar que existen distribuciones de Python, especializadas
+ Tambien hay que destacar que existen distribuciones de Python, especializadas
  en aprendizaje automático entre otros campos.
  Además con Anaconda ya no es necesario utilizar el comando pip que se utiliza
- con Python para la instalación de librerías, se utiliza el comando conda.
+ con Python para la instalación de bibliotecas, se utiliza el comando conda.
 \end_layout
 
 \begin_layout Standard
 Por otra parte, para poder proceder con el desarrollo, fue necesario la
- instalación de librerías relacionadas con la conexión a la Base de Datos
- (mysql), con el framework que permite el desarrollar el servicio de reconocimie
-nto facial (bottle y face_recognition), con la lectura de directorios y
- archivos del servidor (os), con el reconocimiento facial (face_recognition),
- con el deep learning (dlib), etc.
+ instalación de bibliotecas relacionadas con la conexión a la Base de Datos
+ (mysql 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "MySQLConnectorPython"
+literal "false"
+
+\end_inset
+
+), con el framework que permite el desarrollar el servicio de reconocimiento
+ facial (bottle 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Bottle"
+literal "false"
+
+\end_inset
+
+), con la lectura de directorios y archivos del servidor (os 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "osLibrary"
+literal "false"
+
+\end_inset
+
+), con el reconocimiento facial (face_recognition 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "FaceRecognitionLibrary"
+literal "false"
+
+\end_inset
+
+), con el deep learning (dlib 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Dlib"
+literal "false"
+
+\end_inset
+
+), etc.
  
 \end_layout
 
@@ -2242,6 +2256,7 @@ Antes de hablar de estas herramientas, creo necesario hablar de Git.
  Git es una herramienta de control de versiones.
  Es especialmente recomendable cuando el mismo código es utilizado por mas
  de una persona, dado que tiene una herramienta para la solución de conflictos.
+ Básicamente se trata de una herramienta de control de versiones.
  En mi caso, es cierto que el proyecto a realizar tenia algún tipo de relación
  con una de mis compañeras, pero dado que nuestras partes en el desarrollo
  están perfectamente parceladas, prácticamente ninguno de los dos tocaba
@@ -2250,10 +2265,10 @@ Antes de hablar de estas herramientas, creo necesario hablar de Git.
 \end_layout
 
 \begin_layout Standard
-Por otra parte, en mi caso he necesitado Git para poder tener constancia
- de versiones estables de la aplicación, y sobre todo para tener un registro
- de lo que se ha haciendo y de los avances durante el tiempo que ha durado
- el desarrollo.
+Por otra parte, he necesitado Git para poder tener constancia de versiones
+ estables de la aplicación, y sobre todo para tener un registro de lo que
+ se ha ido haciendo y de los avances durante el tiempo que ha durado el
+ desarrollo.
 \end_layout
 
 \begin_layout Standard
@@ -2301,7 +2316,7 @@ idades de la aplicación web.
 \begin_layout Standard
 A parte de los módulos enumerados anteriormente, se utilizó otro más Spring
  Security.
- Spring Security es el modulo de Spring encargado de la seguridad de la
+ Spring Security es el módulo de Spring encargado de la seguridad de la
  aplicación.
  Gracias a dicho módulo se ha sido capaz de:
 \end_layout
@@ -2337,7 +2352,7 @@ Encriptación de datos sensibles
 Spring, además, gracias a los módulos mencionados anteriormente, abstrae
  al desarrollador de la creación de las tablas a la hora de la persistencia
  con la Base de Datos.
- Me bastó con crear las clases necesarias, anotar dichas clases para asegurar
+ Bastó con crear las clases necesarias, anotar dichas clases para asegurar
  que Spring hiciese la conversión, y con desplegar la aplicación, las clases
  eran transcritas a tablas en la Base de Datos.
 \end_layout
@@ -2349,14 +2364,14 @@ En otro orden de cosas, no solo se ha utilizado Java.
  La idea es construir otro servicio con Python, que proporcione servicios
  relacionados con el reconocimiento facial.
  A raíz del uso de Python para incluir dichas mejoras, fueron necesarias
- el uso de varias librerías.
+ el uso de varias bibliotecas.
  A destacar tenemos:
 \end_layout
 
 \begin_layout Itemize
-Librería relacionada con la conexión a la Base de Datos.
+Biblioteca relacionada con la conexión a la Base de Datos.
  Dado que es necesario que se pudiese acceder a la Base de Datos, tanto
- para consulta como para escritura, fue necesario el uso de esta librería.
+ para consulta como para escritura, fue necesario el uso de esta biblioteca.
  (mysql.connector 
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -2369,7 +2384,7 @@ literal "false"
 \end_layout
 
 \begin_layout Itemize
-Librería relacionada con el reconocimiento facial.
+Biblioteca relacionada con el reconocimiento facial.
  (face_recognition 
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -2382,7 +2397,7 @@ literal "false"
 \end_layout
 
 \begin_layout Itemize
-Librería relacionada con la validación de los token JWT.
+Biblioteca relacionada con la validación de los token JWT.
  (PyJWT 
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -2396,7 +2411,7 @@ literal "false"
 
 \begin_layout Itemize
 OpenCV.
- Librería relacionada con la Visión Artificial.
+ Biblioteca relacionada con la Visión Artificial.
  (cv2 
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -2732,7 +2747,7 @@ El contenedor de Spring sabe qué objetos instanciar, configurar o ensamblar
  gracias a los metadatos de configuración.
  Estos metadatos de configuración están representados a su vez por un fichero
  XML, por anotaciones Java o por código Java.
- El contenedor de Spring esta representado por la interfaz BeanFactory y
+ El contenedor de Spring está representado por la interfaz BeanFactory y
  ApplicationContext.
  La interfaz BeanFactory provee un mecanismo avanzado de configuración capaz
  de administrar cualquier objeto, ApplicationContext es una interfaz que
@@ -2759,6 +2774,15 @@ noprefix "false"
 
 , el contenedor Spring sería el recuadro azul, esto es, la base sobre la
  construye todo lo demás.
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "IoCContainerBaeldung,IoCContainerSpring"
+literal "false"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsubsection
@@ -2785,10 +2809,10 @@ Para poder realizar la creación de estas tablas, es necesario la creación
  Además, hace falta especificar cuál será la clave primaria de la entidad.
  Posteriormente, tanto en desarrollo local como en producción, una vez desplegad
 a la aplicación, Spring usando lo especificado en un fichero de configuración
- del que se hablará más adelante, establece la conexión con la Base de Datos,
- traduciendo las relaciones entre clases y las propias clases anotadas pertinent
-emente en tablas, con sus claves primarias y foráneas en el caso de que
- existan relaciones.
+ global del que se hablará más adelante, establece la conexión con la Base
+ de Datos, traduciendo las relaciones entre clases y las propias clases
+ anotadas pertinentemente en tablas, con sus claves primarias y foráneas
+ en el caso de que existan relaciones.
 \end_layout
 
 \begin_layout Standard
@@ -2895,10 +2919,6 @@ name "fig:Diagrama-Entidad-Relación"
 
 \end_layout
 
-\begin_layout Plain Layout
-
-\end_layout
-
 \end_inset
 
 
@@ -2927,14 +2947,14 @@ noprefix "false"
 
 \end_inset
 
- se tiene que los controladores serian el Servicio REST (1).
+ se tiene que los controladores serían el Servicio REST (1).
  Se trata del punto de acceso que tiene el lado cliente para poder acceder
  a los recursos que necesita.
 \end_layout
 
 \begin_layout Standard
 De este modo, una clase anotada como controlador, contendrá en su interior
- una serie de método que se encargara de proveer recursos al lado cliente.
+ una serie de métodos que se encargaran de proveer recursos al lado cliente.
  Cada método estará anotado pertinentemente.
  Por cada método, es necesario decir qué tipo de método es (GET, POST, DELETE,
  PATCH, etc) y qué ruta atiende.
@@ -3162,10 +3182,10 @@ endpoint
 \end_layout
 
 \begin_layout Standard
-Aparte de esto, existe otro modulo derivado del anterior llamado Springfox
+Aparte de esto, existe otro módulo derivado del anterior llamado Springfox
  Swagger UI.
  Este módulo sigue el mismo proceso de generación de la documentación que
- el modulo anterior, la diferencia es que habilita un 
+ el módulo anterior, la diferencia es que habilita un 
 \emph on
 endpoint
 \emph default
@@ -3175,7 +3195,7 @@ endpoint
 \emph on
 endpoints
 \emph default
- en los cuales hace falta iniciar sesión previamente, dicho modulo permite
+ en los cuales hace falta iniciar sesión previamente, dicho módulo permite
  simular dicho inicio de sesión y poder probar todos los 
 \emph on
 endpoints
@@ -3199,7 +3219,7 @@ Si se accede a la dirección base de la aplicación seguido de
 \emph on
 endpoint
 \emph default
- habilitado por el propio modulo, el resultado se puede ver en la Figura
+ habilitado por el propio módulo, el resultado se puede ver en la Figura
  
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -3656,8 +3676,8 @@ literal "false"
 .
  Ambos conceptos han sido extraídos de un Blog realizado por Carlos García
  Moreno.
- Dicho Blog pertenece a la empresa Indra, conocida empresa basada en la
- tecnología y la consultoría.
+ Dicho Blog pertenece a Indra, conocida empresa basada en la tecnología
+ y la consultoría.
 \end_layout
 
 \begin_layout Standard
@@ -3689,7 +3709,7 @@ En un primer momento, se pretendía que un controlador del servicio de gestión
  la funcionalidad.
  El problema es que esto no fue posible en un entorno web, por lo que fue
  necesario la realización de un segundo servicio de reconocimiento facial.
- Por otra parte, si se presta atención al repositorio de dicha librería
+ Por otra parte, si se presta atención al repositorio de dicha biblioteca
  en GitHub 
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -3723,7 +3743,7 @@ noprefix "false"
 
  podemos ver el algoritmo que se sigue a la hora de subir una foto, representado
  mediante un diagrama de actividad se ha incluido el lado cliente para poder
- explicar mejor la utilidad de la API en una aplicación web.
+ explicar mejor la utilidad del servicio en una aplicación web.
  El algoritmo que se sigue es el siguiente, teniendo en cuenta la Figura
  
 \begin_inset CommandInset ref
@@ -3944,9 +3964,10 @@ Verificación de JWT
 \begin_layout Standard
 En la sección anterior, se habló de OAuth2.0 y de los JWT que se usan para
  la autenticación del usuario en el sistema.
- Dado que el servicio es externo a Spring, es necesario comprobar que el
- usuario que accede a los recursos esta autenticado.
- Por lo que, haciendo uso de la librería PyJWT se realiza una validación
+ Dado que el servicio es externo al servicio de gestión de la lógica de
+ la aplicación, es necesario comprobar que el usuario que accede a los recursos
+ está autenticado.
+ Por lo que, haciendo uso de la biblioteca PyJWT se realiza una validación
  del token que llega desde el lado cliente.
  Y se comprueba que el usuario exista en el sistema.
  Si todo va bien, se le permite al lado cliente acceder a los recursos del
@@ -3966,8 +3987,8 @@ noprefix "false"
 
 , una vez se ha completado el flujo, el lado cliente usa este token para
  comunicarse directamente con el servicio de reconocimiento facial, este
- servicio se encarga de validar el token gracias a la librería que se ha
- especificado anteriormente.
+ servicio se encarga de validar el token gracias a la biblioteca que se
+ ha especificado anteriormente.
  Una vez se ha autenticado correctamente el usuario podrá hacer uso de los
  recursos prestados por el servicio y se procedería al intercambio de datos
  visto en la Figura 
@@ -3993,10 +4014,10 @@ Como se ha visto, el framework Bottle provee toda la funcionalidad necesaria
  Pero como se puede comprobar en la documentación de dicha herramienta,
  no provee la funcionalidad necesaria para hacer que la aplicación atienda
  a mas de una petición concurrentemente.
- Por lo que, fue necesaria otra librería que le provea a Bottle esa funcionalida
-d de la que carece.
- En la documentación de Bottle se recomiendas varias librerías capaces de
- realizar dicha funcionalidad como se ve en la Figura 
+ Por lo que, fue necesaria otra biblioteca que le provea a Bottle esa funcionali
+dad de la que carece.
+ En la documentación de Bottle se recomiendas varias bibliotecas capaces
+ de realizar dicha funcionalidad como se ve en la Figura 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:Tabla-de-adaptadores"
@@ -4006,7 +4027,7 @@ noprefix "false"
 
 \end_inset
 
-, se eligió CherryPy como librería para realizar esta función.
+, se eligió CherryPy como biblioteca para realizar esta función.
  Como se pueden ver en la Figura 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -4017,7 +4038,7 @@ noprefix "false"
 
 \end_inset
 
-, dicha librería es bastante estable y realiza la función que necesitamos.
+, dicha biblioteca es bastante estable y realiza la función que necesitamos.
  Además, en un primer momento se optó por el uso de paste, dado que ademas
  de la estabilidad, ha sido testado y probado, pero carece de documentación
  consistente, por lo que se optó por CherryPy.
@@ -4603,7 +4624,7 @@ Code Smells.
 
 \begin_deeper
 \begin_layout Enumerate
-Eliminar importaciones de librerías que no se usan
+Eliminar importaciones de bibliotecas que no se usan
 \end_layout
 
 \begin_layout Enumerate
@@ -4807,8 +4828,8 @@ Se han solucionado todos las vulnerabilidades y los bugs en el código.
 
 \begin_layout Itemize
 Se han solucionado la gran parte de los Code Smells.
- En el caso de los Code Smells, se han eliminado las importaciones de librerías
- que no tienen un uso en el código.
+ En el caso de los Code Smells, se han eliminado las importaciones de biblioteca
+s que no tienen un uso en el código.
  Se ha creado una clase de constantes con el objetivo de la utilización
  reiterada de literales.
  Se han eliminado grandes cantidades de código comentado que podía suponer
@@ -5010,8 +5031,8 @@ Meta conseguida gracias a la arquitectura que se ha elegido para los servicios.
  de realizar la traducción de modelos de datos a entidades en la Base de
  Datos.
  Además, gracias a las anotaciones propias de Spring fue posible enlazar
- las entidades generando el esquema que se puede en el diagrama Entidad-Relación
- de la Figura 
+ las entidades generando el esquema que se puede ver en el diagrama Entidad-Rela
+ción de la Figura 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:Diagrama-Entidad-Relación"
@@ -5106,7 +5127,7 @@ Como se dijo en el capítulo de Introducción, concretamente en la sección
  desde la fase de análisis hasta el despliegue de la aplicación.
  Este objetivo se ha cumplido como se puede comprobar en este documento,
  en el que se ha desarrollado un software que ha pasado por todas las fases
- de desarrollo de software
+ de desarrollo de un software.
 \end_layout
 
 \begin_layout Itemize
@@ -5118,7 +5139,7 @@ Tener un entorno en local para el desarrollo y un entorno de producción
 \series default
 En el caso del servicio encargado de la gestión de la aplicación, se utiliza
  Spring Tool Suite para el desarrollo en local y para el empaquetamiento
- de la aplicación con el objetivo de poner en producción la aplicación.
+ de la aplicación con el objetivo de ponerla en producción.
  Se tiene una Base de Datos que tendrá información relativa al desarrollo
  en local.
  Por otra parte, el entorno en producción se tiene un VPS el cual tiene
@@ -5127,8 +5148,8 @@ En el caso del servicio encargado de la gestión de la aplicación, se utiliza
  En otro orden de cosas, en el caso de la servicio de reconocimiento de
  caras, se tiene un desarrollo en local en PyCharm usando una Base de Datos
  para el desarrollo en local.
- Al igual que la API de gestión de la red social, se despliega la aplicación
- en el VPS con ayuda del framework web Bottle para la puesta en producción.
+ Al igual que el servicio de gestión de la red social, se despliega la aplicació
+n en el VPS con ayuda del framework web Bottle para la puesta en producción.
  Además de esto, se utiliza CherryPy para que el servidor desplegado por
  Bottle sea capaz de atender mas de una petición concurrentemente.
 \end_layout
