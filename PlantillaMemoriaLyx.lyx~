@@ -603,7 +603,7 @@ literal "false"
 \end_inset
 
 : Este modulo hace referencia al Modelo-Vista-Controlador.
- Es el modulo mas antiguo de Spring, fue de los primeros en incluirse.
+ Es el modulo más antiguo de Spring, fue de los primeros en incluirse.
  Y se puede intuir que fue el modulo que introdujo la arquitectura MVC.
 \end_layout
 
@@ -616,10 +616,10 @@ literal "false"
 
 \end_inset
 
-: Proporciona una capa de abstracción a Spring MVC.
- Simplificando la conexión con la Base de Datos y facilitando las funciones
- de persistencia, manteniendo las funciones CRUD propias de estas gracias
- a los DAOs (Data Access Object), entre otras funciones.
+: Proporciona una capa de abstracción a Spring MVC, simplificando la conexión
+ con la Base de Datos y facilitando las funciones de persistencia, manteniendo
+ las funciones CRUD propias de estas gracias a los DAOs (Data Access Object),
+ entre otras funciones.
 \end_layout
 
 \begin_layout Standard
@@ -850,9 +850,9 @@ Por último, tenemos JavaScript, lenguaje sencillo bastante parecido a Java,
  hablar de NodeJS.
  NodeJS es un entorno en tiempo de ejecución en JavaScript en el lado del
  servidor.
- Este entorno por si solo es posible que tenga menos utilidad que los frameworks
- que se han nombrado anteriormente, pero es una gran base para un framework
- web.
+ Este entorno por si solo es pLógica de la aplicación webosibLógica de la
+ aplicación weble que tenga menos utilidad que los frameworks que se han
+ nombrado anteriormente, pero es una gran base para un framework web.
  La lógica a la hora de desarrollar el lado servidor no es diferente al
  que se usa en las herramientas anteriores.
  La diferencia reside en la facilidad que proporciona JavaScript a la hora
@@ -885,12 +885,12 @@ Proporcionar al lado cliente una serie de servicios que le provea los recursos
 \begin_layout Itemize
 Proporcionar al lado cliente una documentación consistente acerca de la
  aplicación, en particular: documentación referente al servicio de gestión
- de la red social y referente al servicio encargado de la Visión Artificial
+ de la red social y referente al servicio encargado de la Visión Artificial.
 \end_layout
 
 \begin_layout Itemize
 Introducir una funcionalidad de visión artificial que permita realizar sugerenci
-as a los usuarios sobre las publicaciones que realiza
+as a los usuarios sobre las publicaciones que realiza.
 \end_layout
 
 \begin_layout Itemize
@@ -900,7 +900,7 @@ Diseñar un servicio sencillo e intuitivo que ofrezca los servicios de red
 \end_layout
 
 \begin_layout Itemize
-Desarrollar un esquema de base de datos
+Desarrollar un esquema de base de datos.
 \end_layout
 
 \begin_layout Itemize
@@ -938,13 +938,13 @@ Estructura de la memoria
 \end_layout
 
 \begin_layout Standard
-El resto de la memoria de este TFG se estructura en:
+El resto de la memoria de este TFG se estructura de la siguiente manera:
 \end_layout
 
 \begin_layout Itemize
 
 \series bold
-Capitulo 2
+Capítulo 2
 \series default
 : Análisis.
  En este capítulo se realiza una descripción completa del sistema que se
@@ -957,28 +957,28 @@ Capitulo 2
 Capítulo 3
 \series default
 : Diseño e implementación.
- En este capitulo se describe la solución que se creara para conseguir los
+ En este capítulo se describe la solución que se creará para conseguir los
  objetivos y los requisitos que se han planteado previamente.
 \end_layout
 
 \begin_layout Itemize
 
 \series bold
-Capitulo 4
+Capítulo 4
 \series default
-: Capitulo de experimentos, pruebas y métricas.
- En este capitulo se explican las métricas que se han acumulado durante
+: Capítulo de experimentos, pruebas y métricas.
+ En este capítulo se explican las métricas que se han acumulado durante
  el desarrollo del proyecto
 \end_layout
 
 \begin_layout Itemize
 
 \series bold
-Capitulo 5
+Capítulo 5
 \series default
 .
  Conclusiones.
- En este capitulo se explican cómo se han cumplido los objetivos que se
+ En este capítulo se explican cómo se han cumplido los objetivos que se
  detallaron al principio de la memoria.
 \end_layout
 
@@ -1006,9 +1006,10 @@ Documento de especificación de requisitos.
 Antes de empezar a enumerar los requisitos y a presentar una serie de aclaracion
 es con respecto a ellos, es necesario aclarar varios conceptos.
  Como introducción a los requisitos cabe destacar que el sistema que especifico
- es una API, como ya aclaré anteriormente.
- Concretamente se trata de una API REST.
- Una API REST es una biblioteca apoyada totalmente en el estándar HTTP.
+ es un servicio y de la implentación correspondiente.
+ Concretamente este servicio tiene dos partes, por una parte se tiene un
+ servicio de gestión de la funcionalidad y lógica de la aplicación y por
+ otra un servicio encargado del reconocimiento facial.
 \end_layout
 
 \begin_layout Subsection
@@ -1346,30 +1347,6 @@ Requisito que hace referencia a editar el perfil de un determinado usuario
 \end_layout
 
 \end_deeper
-\begin_layout Subsubsection
-Requisitos relacionados con la descarga de archivos
-\end_layout
-
-\begin_layout Standard
-Como hemos especificado anteriormente, la API REST esta especialmente diseñada
- para dar sus servicios a una plataforma con algún tipo de estructura social.
- Por tanto, es posible la descarga de determinados archivos.
-\end_layout
-
-\begin_layout Itemize
-
-\series bold
-RF01.D: Descarga de imágenes
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-Requisito que hace referencia a descargar una determinada imagen de la Base
- de Datos.
- Solo podrán hacer uso de esta funcionalidad los administradores.
-\end_layout
-
-\end_deeper
 \begin_layout Standard
 
 \series bold
@@ -1622,7 +1599,7 @@ El desarrollo del servicio REST se realiza en local, pero es necesario tener
  Es necesario que el cliente pueda utilizar el servicio esté donde esté.
  Como ya he dicho antes, en este caso se contrató un alojamiento de tipo
  VPS (Servidor Virtual Privado) Se decidió que el Sistema Operativo fuese
- un Debian GNU/Linux versión 9 (stretch), la cual es la versión mas estable
+ un Debian GNU/Linux versión 9 (stretch), la cual es la versión más estable
  del SO.
 \end_layout
 
@@ -1823,7 +1800,8 @@ noprefix "false"
 
 \end_inset
 
- los casos de uso derivados de los requisitos funcionales ya mencionados.
+ se presentan los casos de uso derivados de los requisitos funcionales ya
+ mencionados.
 \end_layout
 
 \begin_layout Standard
@@ -1834,7 +1812,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename C:/Users/agust/Desktop/tfg Use Case diagram.jpg
+	filename tfg Use Case diagram.jpg
 	scale 45
 
 \end_inset
@@ -1875,7 +1853,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename C:/Users/agust/Desktop/UseCaseDiagram_2.png
+	filename UseCaseDiagram_2.png
 	scale 70
 
 \end_inset
@@ -2154,7 +2132,7 @@ Herramientas utilizadas
 \end_layout
 
 \begin_layout Standard
-En el capitulo de Análisis, concretamente en el capitulo de recursos utilizados,
+En el capítulo de Análisis, concretamente en el capítulo de recursos utilizados,
  se entro un poco en detalle de las herramientas utilizadas.
  En esta sección se hablará más en detalle de ello.
 \end_layout
@@ -2336,9 +2314,7 @@ Establecer la configuración CORS (Intercambio de Recursos de Origen Cruzado),
 \begin_layout Itemize
 Establecer una blacklist de 
 \emph on
-endpoints
-\emph default
- 
+endpoints 
 \end_layout
 
 \begin_layout Itemize
@@ -2493,7 +2469,7 @@ Por otra parte, al igual que Eclipse, proporciona soporte para test unitarios,
 \end_layout
 
 \begin_layout Standard
-Por último, tenemos PyCharm.
+Para terminar, tenemos PyCharm.
  Entorno de programación especializado en Python.
  Dado que se pretende realizar tareas de Visión Artificial que implican
  el uso de Python, es necesario el uso de PyCharm.
@@ -2515,7 +2491,7 @@ Dado que se trata de una Base de Datos MariaDB, fue necesario una herramienta
  Basta con elegir qué tipo de Base de Datos se quiere gestionar y especificar
  los datos de conexión.
  La herramienta hace lo demás.
- Con esta herramienta, he sido capaz de hacer cambios en la Base de Datos
+ Con esta herramienta, se es capaz de hacer cambios en la Base de Datos
  permitiendo la posibilidad de tanto hacerlo mediante la interfaz de gestión
  como de ejecutar sentencias SQL que la herramienta se encarga de gestionar.
 \end_layout
@@ -2602,7 +2578,7 @@ src/test/java
  es, la funcionalidad completa de la aplicación.
  En la segunda carpeta se encuentran los recursos estáticos (ficheros .js,
  .css, .png, etc) y las plantillas de la aplicación si las hubiese, además
- del fichero de configuración 
+ del ficherohe sido de configuración 
 \begin_inset Quotes eld
 \end_inset
 
@@ -2629,7 +2605,7 @@ status open
 
 \end_inset
 
-
+O
 \end_layout
 
 \begin_layout Plain Layout
@@ -2688,6 +2664,7 @@ status open
 \end_layout
 
 \begin_layout Plain Layout
+s
 \begin_inset Graphics
 	filename Spring.png
 	scale 35
@@ -2996,7 +2973,7 @@ Ahora bien, los controladores que existen en la aplicación son:
 \begin_layout Itemize
 Controlador de usuarios.
  Este controlador se encarga de proveer recursos relacionados con los usuarios.
- Y, en concordancia con los requisitos funcionales especificados en el capitulo
+ Y, en concordancia con los requisitos funcionales especificados en el capítulo
  de Análisis, tenemos:
 \end_layout
 
@@ -3534,10 +3511,9 @@ Servicios
 \end_layout
 
 \begin_layout Standard
-A diferencia del apartado anterior, los servicios no es una herramienta
- proporcionada por Spring.
- Se implementa por parte del desarrollador.
- En mi caso, he implementado un servicio por cada uno de los repositorios
+A diferencia del apartado anterior, los servicios no son una herramienta
+ proporcionada por Spring sino que se implementan por parte del desarrollador.
+ En este caso, se ha implementado un servicio por cada uno de los repositorios
  que existen.
  Dichos servicios deben ir anotados pertinentemente y tendrán métodos que
  implementaran los mismos métodos que el DAO.
@@ -3582,7 +3558,7 @@ Servicio dedicado a las caras extraídas de las imágenes
 \end_layout
 
 \begin_layout Standard
-Dado que los servicios es una capa que se encuentra entre los controladores
+Dado que los servicios son una capa que se encuentra entre los controladores
  y los repositorios, en la Figura 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -3678,7 +3654,7 @@ literal "false"
 \end_inset
 
 .
- Ambos conceptos han sido extraído de un Blog realizado por Carlos García
+ Ambos conceptos han sido extraídos de un Blog realizado por Carlos García
  Moreno.
  Dicho Blog pertenece a la empresa Indra, conocida empresa basada en la
  tecnología y la consultoría.
@@ -3708,9 +3684,9 @@ literal "false"
 \end_layout
 
 \begin_layout Standard
-En un primer momento, lo que se pretendía era que un controlador del servicio
- de gestión de los servicios de la red social ejecutase un script de Python
- que realizase la funcionalidad.
+En un primer momento, se pretendía que un controlador del servicio de gestión
+ de los servicios de la red social ejecutase un script de Python que realizase
+ la funcionalidad.
  El problema es que esto no fue posible en un entorno web, por lo que fue
  necesario la realización de un segundo servicio de reconocimiento facial.
  Por otra parte, si se presta atención al repositorio de dicha librería
@@ -3800,16 +3776,15 @@ Vuelta al paso 1.
 Ahora bien, cabe decir, que el lado servidor devolverá caras siempre y cuando
  existan caras en la foto.
  Si no existen caras en la foto, no se devolverán, además de no devolver
- sugerencias como es obvio.
+ sugerencias.
  Si es posible devolver caras, el servidor devolverá caras además de sugerencias
  dependiendo de las fotos subidas anteriormente por el usuario.
- El algoritmo aprende de las caras que el usuario ha registrado anteriormente.
+ El algoritmo aprende las caras que el usuario ha registrado anteriormente.
  Por lo que, si el usuario sube su primera foto a la aplicación, es posible
- que el servidor devuelva caras, pero no devolverá en ningún caso sugerencias,
- dado que no tiene registro de fotos y por tanto no tendrá caras registradas.
+ que el servidor devuelva caras, pero no devolverá en ningún caso sugerencias.
  El usuario solo podrá etiquetar caras con otros usuarios si y solo si estos
  usuarios pertenecen a su lista de amigos.
- En otro caso, no será posible etiquetar.
+ En otro caso, no será posible etiquetarlas.
 \end_layout
 
 \begin_layout Standard
@@ -3862,7 +3837,7 @@ name "fig:Diagrama-de-actividad"
 
 \begin_layout Standard
 Además, el algoritmo es capaz de mejorar en función de la actividad del
- usuario en la aplicación, es decir, mientras más amigos tenga el usuario
+ usuario en la aplicación, es decir, cuantos más amigos tenga el usuario
  y más fotos suba con etiquetas, el sistema irá aprendiendo a realizar prediccio
 nes más fieles con respecto a sus amigos.
  
@@ -4043,8 +4018,8 @@ noprefix "false"
 \end_inset
 
 , dicha librería es bastante estable y realiza la función que necesitamos.
- Además, en un primer momento se optó por el uso de paste, da dado que ademas
- de la estabilidad, ah sido testado y probado, pero carece de documentación
+ Además, en un primer momento se optó por el uso de paste, dado que ademas
+ de la estabilidad, ha sido testado y probado, pero carece de documentación
  consistente, por lo que se optó por CherryPy.
  
 \end_layout
