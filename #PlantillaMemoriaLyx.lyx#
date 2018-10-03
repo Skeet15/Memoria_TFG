@@ -1,0 +1,5355 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass book
+\begin_preamble
+%Para que las URLs de la bibliografía se pueda pinchar
+\usepackage{url}
+
+%Cabeceras y pies de página
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\lhead[\rightmark]{}
+\rhead[]{\leftmark}
+\cfoot{\thepage}
+
+%Para que los índices respeten los espacios de las nuemraciones
+\usepackage[tocindentauto]{tocstyle}
+\usetocstyle{standard}
+
+%Para que ponga "Índice de Tablas" en vez de "Indice de Cuadros"
+\addto\captionsspanish{
+\def\tablename{Tabla}
+\def\listtablename{\'Indice de tablas}
+}
+
+%Para que las páginas en blanco no tengan cabecera ni número de página
+\makeatletter
+\renewcommand*{\cleardoublepage}{\clearpage\if@twoside \ifodd\c@page\else
+\hbox{}%
+\thispagestyle{empty}%
+\newpage%
+\if@twocolumn\hbox{}\newpage\fi\fi\fi}
+\makeatother
+\end_preamble
+\options chapterprefix, numbers=noenddot
+\use_default_options false
+\begin_modules
+theorems-ams
+eqs-within-sections
+figs-within-sections
+\end_modules
+\maintain_unincluded_children false
+\language spanish
+\language_package babel
+\inputencoding utf8
+\fontencoding global
+\font_roman "ae" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family rmdefault
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement t
+\paperfontsize 12
+\spacing single
+\use_hyperref true
+\pdf_bookmarks true
+\pdf_bookmarksnumbered false
+\pdf_bookmarksopen false
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks true
+\pdf_pdfborder true
+\pdf_colorlinks false
+\pdf_backref false
+\pdf_pdfusetitle true
+\papersize a4paper
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine biblatex
+\cite_engine_type numerical
+\biblio_style plain
+\biblatex_bibstyle nature
+\biblatex_citestyle numeric
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\use_minted 0
+\index Índice
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 2.5cm
+\topmargin 2.5cm
+\rightmargin 2.5cm
+\bottommargin 2.5cm
+\headheight 1cm
+\headsep 1cm
+\footskip 1cm
+\secnumdepth 2
+\tocdepth 2
+\paragraph_separation skip
+\defskip medskip
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 2
+\paperpagestyle default
+\listings_params "basicstyle={\ttfamily},breaklines=true"
+\bullet 1 0 9 -1
+\bullet 2 0 15 -1
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\author 253019401 "agust"
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+frontmatter
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{titlepage}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\paragraph_spacing double
+\noindent
+\align center
+\begin_inset Graphics
+	filename Figs/logoURJC.eps
+	height 3cm
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Escuela Técnica Superior de Ingeniería Informática
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace 4cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+
+\size largest
+Desarrollo de servicios REST utilizando Spring Framework y Python
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace 4cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+
+\size large
+Memoria del Trabajo Fin de Grado
+\begin_inset Newline newline
+\end_inset
+
+en Ingeniería Informática
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace 4cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+
+\size large
+Autor: Agustín Daniel Schüler Allub
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+
+\size large
+Tutor: José Francisco Vélez Serrano
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+Agosto 2018
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{titlepage}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter*
+Agradecimientos
+\end_layout
+
+\begin_layout Standard
+Quiero agradecer sus consejos a Pablo Viniegra Picazo y a Vanessa Krebs
+ Carretero.
+\end_layout
+
+\begin_layout Standard
+Quiero agradecer a Jorge Aranda García y a Patricia de Gregorio Ruiz el
+ tiempo que han compartido conmigo estos 4 años.
+\end_layout
+
+\begin_layout Standard
+Quiero agradecer sus contribuciones a todos los desarrolladores de software
+ libre que me han proporcionado herramientas para realizar este trabajo.
+\end_layout
+
+\begin_layout Standard
+Finalmente, quiero agradecer su paciencia a mi familia durante el transcurso
+ de la carrera.
+\end_layout
+
+\begin_layout Chapter*
+Resumen
+\end_layout
+
+\begin_layout Standard
+En este TFG se pretende realizar una red social que permita al usuario realizar
+ publicaciones, tener amistades dentro de la aplicación, comentar las publicacio
+nes de sus amistades y recibir sugerencias sobre las publicaciones que sube.
+ Este TFG se centra en la parte del servidor de la red social y se hace
+ coordinado con otro TFG que se encarga de la parte de la interfaz del usuario.
+\end_layout
+
+\begin_layout Standard
+Para la realización de este TFG se han desarrollado dos servicios REST.
+ Por una parte, un servicio realizado en Spring Framework encargado de la
+ lógica de la aplicación.
+ Por otra parte, un servicio realizado con Python, encargado de la Visión
+ Artificial de la aplicación, responsable de realizar las sugerencias al
+ usuario sobre las publicaciones que realiza en la aplicación.
+ Ambos servicios utilizan una Base de Datos MySQL y se apoyan en el estandar
+ HTTP.
+ Se encuentran desplegados en un Servidor Virtual Privado, y están cifrados
+ con certificados SSL.
+\end_layout
+
+\begin_layout Standard
+La totalidad de la aplicación está subida a GitHub y es posible acceder
+ a ella en esta dirección 
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+https://artvify.es
+\end_layout
+
+\end_inset
+
+.
+ De todas formas, en esta dirección se encuentra la interfaz de usuario
+ realizada en el TFG mencionado anteriormente, si se quiere acceder a cualquiera
+ de los dos servicios desarrollados en este TFG basta con acceder a esta
+ dirección 
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+https://artvify.es/api/
+\end_layout
+
+\end_inset
+
+ en el caso del servicio que se encarga de la lógica de la aplicación o
+ a esta dirección 
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+https://artvify.es/py/
+\end_layout
+
+\end_inset
+
+ en el caso del servicio encargado de las sugerencias a usuarios.
+\end_layout
+
+\begin_layout Standard
+Al final se ha conseguido tener dos servicios REST que se encargan de atender
+ peticiones HTTP realizadas por el lado cliente.
+ Ambos servicios mantiene la persistencia de la aplicación gracias a una
+ Base de Datos la cual se encuentra alojada en el mismo servidor que los
+ servicios.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+mainmatter
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FloatList figure
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+Introducción
+\end_layout
+
+\begin_layout Standard
+En este capítulo se explicará la motivación que ha llevado a realizar este
+ Trabajo Fin de Grado (TFG), se comentará el estado del arte al respecto
+ y se plantearán los objetivos.
+\end_layout
+
+\begin_layout Section
+Motivación
+\end_layout
+
+\begin_layout Standard
+En particular, siempre se quiso tener la meta de desarrollar una aplicación
+ web en su totalidad.
+ Normalmente en las diferentes asignaturas de la carrera, se proponían tareas
+ relacionadas con ello, pero nunca se sintió que se profundizara mucho en
+ el tema.
+\end_layout
+
+\begin_layout Standard
+Como consecuencia, la búsqueda de documentación de las herramientas utilizadas
+ y el ser autodidacta, han sido pilares importantes en la realización del
+ TFG.
+ Aunque cabe destacar que ha sido de los mejores proyectos en los que me
+ he visto involucrado, sobre todo por la libertad que me proporcionó mi
+ tutor para poder desarrollar dicho proyecto.
+\end_layout
+
+\begin_layout Standard
+Además, a parte de esto, se pretende presentar una red social que aporte
+ algo más de lo que aportan redes sociales conocidas como Twitter o Instagram.
+ Ambas dos, dan la posibilidad de realizar publicaciones que incluyen fotos,
+ pero en ultima instancia el usuario es el que indica quien aparece en dichas
+ fotos.
+ En este TFG se quiere realizar sugerencias acerca de las fotos que sube
+ el usuario a la red social.
+\end_layout
+
+\begin_layout Standard
+Con respecto a lo que se hablaba en el párrafo anterior y coincidiendo con
+ la asignatura de Visión Artificial realizada este ultimo año de carrera,
+ se quiere incluir la posibilidad de que el sistema sea capaz de realizar
+ sugerencias sobre quién aparece en la publicación que el usuario sube.
+ Además, el sistema debe ser capaz de aprender de ello y cuanta más actividad
+ tenga el usuario mejores sugerencias realizará la aplicación.
+\end_layout
+
+\begin_layout Section
+Estado del arte
+\end_layout
+
+\begin_layout Standard
+Por lo dicho anteriormente se pueden intuir las soluciones que pueden llegar
+ a cubrir el problema que se desea abordar en este Trabajo de Fin de Grado.
+ 
+\end_layout
+
+\begin_layout Standard
+En mi caso se optó por herramientas con las que tenia soltura y además que
+ estuviesen a la orden del día.
+ Es importante esto último, dado que es importante que las herramientas
+ cuenten con una documentación consistente y se encuentren actualizadas.
+\end_layout
+
+\begin_layout Subsection*
+Lógica de la aplicación web
+\end_layout
+
+\begin_layout Standard
+Actualmente existen multitud de herramientas informáticas que se encarguen
+ del lado servidor en una aplicación web.
+ Con casi total probabilidad la más conocida sea el lenguaje de programación
+ PHP, muchas veces viene preinstalado en la mayoría de sistemas.
+ Además, para desarrollar en el lado servidor se suele utilizar un framework
+ de PHP.
+ Uno de los más famosos es CakePHP, proporciona una arquitectura MVC, es
+ de código abierto y además había trabajado con ello durante el tiempo suficient
+e como para tener cierta soltura.
+ CakePHP provee de capas de abstracción con respecto a las consultas contra
+ la Base de Datos, para la gestión de errores, para la conexión entre modelo
+ y vista.
+ Todo ello, hace que CakePHP sea una herramienta adecuada para el desarrollo
+ del lado servidor
+\end_layout
+
+\begin_layout Standard
+Es necesario nombrar a Java, lenguaje fuertemente tipado y orientado a objetos.
+ Ahora bien, si queremos hablar de Java y de lado servidor o lógica de la
+ aplicación web hay que hablar de Spring Framework.
+ Es el framework mas antiguo en este campo, pero sigue siendo a día de hoy
+ el mas popular entre los desarrolladores web.
+ Consta de módulos que facilitan el trabajo a los desarrolladores.
+ Antes de hablar a fondo sobre los módulos de Spring framework, es necesario
+ hablar de Spring en si.
+ Spring Framework sigue tres pasos a la hora del desarrollo:
+\end_layout
+
+\begin_layout Enumerate
+Creación de un proyecto Maven/Gradle
+\end_layout
+
+\begin_layout Enumerate
+Desarrollo de la aplicación web
+\end_layout
+
+\begin_layout Enumerate
+Despliegue de la aplicación web en un servidor
+\end_layout
+
+\begin_layout Standard
+Maven y Gradle son asistentes que facilitan la creación de proyectos Java
+ y proporcionan herramientas para la gestión de dependencias.
+ Existen diferencias consustanciales entre Maven y Gradle, como se puede
+ ver en este articulo 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "MavenVsGradle"
+literal "false"
+
+\end_inset
+
+.
+ Pero, a fin de cuentas, las dos herramientas tienen la misma finalidad.
+ Posteriormente se procede al desarrollo de la aplicación web y por ultimo
+ para que la aplicación esté al servicio del cliente, es necesario el despliegue
+ en un servidor.
+\end_layout
+
+\begin_layout Standard
+Spring Framework, da la posibilidad de la creación de controladores utilizando
+ las anotaciones, entre otras funcionalidad.
+ Las anotaciones son directrices para controlar el comportamiento de Spring.
+ Dichas anotaciones comienzan por el símbolo '@' seguido de la directiva
+ que se dese ejecutar.
+ Spring Framework 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "SpringFramework"
+literal "false"
+
+\end_inset
+
+ también es capaz de transformar los objetos en un formato de texto concreto,
+ como JSON, mediante serializadores como Jackson con el fin de poder comunicarse
+ debidamente con el lado del cliente.
+ También proporciona anotaciones que ayudan a la comunicación con la Base
+ de Datos, con un par de anotaciones en las clases es capaz de indicarle
+ a la Base de Datos como deben de guardarse los datos y de que forma.
+ Independientemente del tipo de Base de Datos (relacional o no relacional).
+\end_layout
+
+\begin_layout Standard
+Además, existen diferentes tipos de anotaciones dependiendo de la necesidad
+ del desarrollador: a nivel de método, a nivel de clase o a nivel de atributo.
+\end_layout
+
+\begin_layout Standard
+En otro orden de cosas, tenemos los módulos de Spring Framework.
+ Tenemos tres a destacar:
+\end_layout
+
+\begin_layout Itemize
+Spring Boot 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "SpringBoot"
+literal "false"
+
+\end_inset
+
+: Antes se ha hablado de que existen tres pasos a seguir para el desarrollo
+ del lado servidor.
+ El modulo Spring Boot de Spring Framework se encarga de simplificar esos
+ pasos.
+ Es decir, a fin de cuentas los pasos 1 y 3 no requieren del desarrollador
+ para ser ejecutados.
+ Spring Boot se encarga de automatizar los pasos 1 y 3 para centrar todo
+ el esfuerzo en la realización del código de la aplicación.
+ Se puede ver con más detalle en este Blog 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "QueEsSpringBoot"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Spring MVC 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "SpringMVC"
+literal "false"
+
+\end_inset
+
+: Este modulo hace referencia al Modelo-Vista-Controlador.
+ Es el modulo mas antiguo de Spring, fue de los primeros en incluirse.
+ Y se puede intuir que fue el modulo que introdujo la arquitectura MVC.
+\end_layout
+
+\begin_layout Itemize
+Spring Data 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "SpringData"
+literal "false"
+
+\end_inset
+
+: Proporciona una capa de abstracción a Spring MVC.
+ Simplificando la conexión con la Base de Datos y facilitando las funciones
+ de persistencia, manteniendo las funciones CRUD propias de estas gracias
+ a los DAOs (Data Access Object), entre otras funciones.
+\end_layout
+
+\begin_layout Standard
+Spring, en combinación con los módulos descritos, da la capacidad de la
+ definición sencilla de Beans que luego serán traducidos a un fichero XML
+ de configuración de la aplicación.
+ Un Bean en Spring es un objeto que ha sido configurado e instanciado en
+ el contenedor de Spring.
+ Dichos beans, permanecerán en la aplicación web hasta que el propio desarrollad
+or los destruya.
+ El propio desarrollador define beans mediante anotaciones que luego se
+ traduce en ficheros XML que Spring interpreta e integra en la aplicación
+ web.
+\end_layout
+
+\begin_layout Standard
+Por otra parte tenemos Python, lenguaje de programación bastante sencillo,
+ orientado a objetos y débilmente tipado.
+ Normalmente viene instalado de serie en la mayoría de sistemas Linux.
+ De nuevo: el potencial de Python a la hora del desarrollo web reside en
+ los framework.
+ En este caso destaco tres: Django, Flask y Bottle.
+ 
+\end_layout
+
+\begin_layout Standard
+Django es posiblemente el framework de referencia si se decide utilizar
+ Python para el desarrollo de la lógica de la aplicación web.
+ Proporciona arquitectura MVC, es de código abierto y proporciona herramientas
+ que ayudan a la autenticación en la aplicación web.
+ Por otro lado, tenemos Flask, sigue el mismo camino que Django, se trata
+ de un framework de Python basado en Werkzeug y Jinja2.
+ Werkzeug es una librería de utilidades para WSGI de Python y Jinja2 es
+ un motor de sistemas de plantillas inspirado en Django.
+ Por ultimo, tenemos Bottle.
+ Bottle es bastante parecido a Flask y es el enfoque que yo he utilizado
+ para el desarrollo de parte de la aplicación.
+ Es un microframework (al igual que Flask) basado en WSGI que sigue también
+ la arquitectura MVC.
+ En anteriores secciones he mencionado que tenia como objetivo incluir alguna
+ mejora para la lógica de la aplicación web.
+\end_layout
+
+\begin_layout Standard
+En otro orden de cosas, Python también se ha utilizado para la Visión Artificial
+, en concreto existen bibliotecas para el desarrollo de la Visión Artificial
+ en Python.
+ 
+\end_layout
+
+\begin_layout Standard
+En primer lugar, se tiene OpenCV, biblioteca de código abierto, tiene interfaces
+ en Java, Python y C++, además de estar soportado en Windows, Linux y Mac
+ OS.
+ Esta biblioteca esta desarrollada en C/C++, por lo que da la posibilidad
+ de tomar ventaja del procesamiento con multiples nucleos.
+ Esta biblioteca cuenta con una gran popularidad entre los desarrolladores
+ como corrobora su propio equipo de desarrollo 
+\begin_inset CommandInset citation
+LatexCommand cite
+before "Adopted all around the world, OpenCV has more than 47 thousand people of user community and estimated number of downloads exceeding 14 million"
+key "OpenCV"
+literal "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+En otro orden de cosas, se tiene Scikit-Image, biblioteca de código abierto
+ construida sobre NumPy, SciPy y matplotlib especializada en el Machine
+ Learning.
+ Esta biblioteca no tiene soporte para las redes neuronales, aunque existen
+ otras implementaciones de algoritmos de Machine Learning como la clasificación,
+ la regresión o la predicción.
+ 
+\end_layout
+
+\begin_layout Standard
+También se tiene SimpleCV.
+ SimpleCV es un framework de código abierto que tiene como núcleo a OpenCV.
+ Esta biblioteca tiene como objetivo proporcionar una introducción fácil
+ y simple a la Visión Artificial.
+ Por ejemplo, En la Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Captura-de-la"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ y 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Captura-de-la-1"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ de dos fragmentos de código pertenecientes a los tutoriales de OpenCV 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "OpenCVTutorials"
+literal "false"
+
+\end_inset
+
+ y de la página web de SimpleCV 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "SimpleCV"
+literal "false"
+
+\end_inset
+
+, se puede ver como realizar acciones sobre los frames de es mucho mas simple
+ y limpio en SimpleCV que en OpenCV.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename OpenCVVideoCapture.png
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Captura de la cámara en OpenCV
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Captura-de-la"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename SimpleCVVideoCapture.png
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Captura de la cámara en SimpleCV 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Captura-de-la-1"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Por último, tenemos JavaScript, lenguaje sencillo bastante parecido a Java,
+ débilmente tipado y orientado a objetos.
+ Normalmente se conoce a JavaScript por su utilidad en el lado cliente de
+ las aplicaciones, pero en este caso vamos a hablar de él en el lado del
+ servidor.
+ Si hablamos de JavaScript en el lado del servidor, entonces tenemos que
+ hablar de NodeJS.
+ NodeJS es un entorno en tiempo de ejecución en JavaScript en el lado del
+ servidor.
+ Este entorno por si solo es posible que tenga menos utilidad que los frameworks
+ que se han nombrado anteriormente, pero es una gran base para un framework
+ web.
+ La lógica a la hora de desarrollar el lado servidor no es diferente al
+ que se usa en las herramientas anteriores.
+ La diferencia reside en la facilidad que proporciona JavaScript a la hora
+ del desarrollo.
+ NodeJS tiene, indirectamente, la facilidad que proporciona JavaScript a
+ la hora de programar.
+ No contiene la dificultad que presenta Java a la hora del tipado.
+ Por ejemplo, mientras que en Java se tiene que modificar el tipo de lo
+ que devuelve una función porque el cliente necesita otra lógica en la respuesta
+, en NodeJS bastaría con agregarlo lo que se necesita en el objeto a devolver.
+\end_layout
+
+\begin_layout Section
+Objetivos
+\end_layout
+
+\begin_layout Standard
+Este trabajo tiene como objetivo principal, el desarrollo de un servicio
+ que ofrezca las funciones necesarias para construir una red social.
+ Dicho objetivo principal puede desglosarse en diferentes objetivos específicos:
+\end_layout
+
+\begin_layout Itemize
+Proporcionar al lado cliente una serie de servicios que le provea los recursos
+ que necesita para: gestionar usuarios, gestionar el inicio de sesión y
+ el registro de los usuarios, gestionar la realización de publicaciones
+ y gestionar la realización de comentarios en las publicaciones.
+\end_layout
+
+\begin_layout Itemize
+Proporcionar al lado cliente una documentación consistente acerca de la
+ aplicación, en particular: documentación referente al servicio de gestión
+ de la red social y referente al servicio encargado de la Visión Artificial
+\end_layout
+
+\begin_layout Itemize
+Introducir una funcionalidad de visión artificial que permita realizar sugerenci
+as a los usuarios sobre las publicaciones que realiza
+\end_layout
+
+\begin_layout Itemize
+Diseñar un servicio sencillo e intuitivo que ofrezca los servicios de red
+ social.
+ 
+\end_layout
+
+\begin_layout Itemize
+Desarrollar un esquema de base de datos
+\end_layout
+
+\begin_layout Itemize
+Desarrollar un sistema de visión artificial que permita el reconocimiento
+ facial en las personas que aparezcan en las fotos subidas a la red social.
+ 
+\end_layout
+
+\begin_layout Itemize
+Desarrollar un servicio para el sistema de visión artificial de reconocimiento
+ facial.
+ 
+\end_layout
+
+\begin_layout Itemize
+Realizar pruebas de los servicio desarrollados.
+\end_layout
+
+\begin_layout Itemize
+Entender en profundidad lo que significa desarrollar un software desde cero
+\end_layout
+
+\begin_layout Itemize
+Tener un entorno en local para el desarrollo y un entorno en producción
+ para probar lo desarrollado de cara al cliente
+\end_layout
+
+\begin_layout Itemize
+Búsqueda y uso de herramientas que hagan posible la realización de los objetivos
+ nombrados hasta ahora
+\end_layout
+
+\begin_layout Section
+Estructura de la memoria
+\end_layout
+
+\begin_layout Standard
+El resto de la memoria de este TFG se estructura en:
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Capitulo 2
+\series default
+: Análisis.
+ En este capítulo se realiza una descripción completa del sistema que se
+ desea construir.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Capítulo 3
+\series default
+: Diseño e implementación.
+ En este capitulo se describe la solución que se creara para conseguir los
+ objetivos y los requisitos que se han planteado previamente.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Capitulo 4
+\series default
+: Capitulo de experimentos, pruebas y métricas.
+ En este capitulo se explican las métricas que se han acumulado durante
+ el desarrollo del proyecto
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Capitulo 5
+\series default
+.
+ Conclusiones.
+ En este capitulo se explican cómo se han cumplido los objetivos que se
+ detallaron al principio de la memoria.
+\end_layout
+
+\begin_layout Chapter
+Análisis
+\end_layout
+
+\begin_layout Standard
+A continuación se va a proceder a realizar un análisis detallado sobre el
+ proyecto.
+ En primer lugar, se realiza un listado (con su respectiva explicación)
+ de requisitos tanto funcionales como no funcionales de la solución que
+ se pretende desarrollar.
+ Posteriormente, se presenta un diagrama de casos de uso, presentando un
+ modelo del problema que se desea resolver.
+ Finalmente se hace un análisis de los recursos utilizados desde diferentes
+ puntos de vista.
+\end_layout
+
+\begin_layout Section
+Documento de especificación de requisitos.
+\end_layout
+
+\begin_layout Standard
+Antes de empezar a enumerar los requisitos y a presentar una serie de aclaracion
+es con respecto a ellos, es necesario aclarar varios conceptos.
+ Como introducción a los requisitos cabe destacar que el sistema que especifico
+ es una API, como ya aclaré anteriormente.
+ Concretamente se trata de una API REST.
+ Una API REST es una biblioteca apoyada totalmente en el estándar HTTP.
+\end_layout
+
+\begin_layout Subsection
+Requisitos funcionales
+\end_layout
+
+\begin_layout Standard
+Se creyó conveniente separar los requisitos por secciones, al igual que
+ la API separa los servicios que ofrece por controladores.
+\end_layout
+
+\begin_layout Subsubsection
+Requisitos relacionados con los usuarios
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+RF01.U: Obtener un usuario.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Requisito que hace referencia a obtener un determinado usuario
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+RF02.U: Obtener todos los usuarios.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Requisito que hace referencia a obtener todos los usuarios que hay almacenados
+ en la Base de Datos
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+RF03.U: Añadir un usuario
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Requisito que hace referencia a añadir un determinado usuario a la Base
+ de Datos
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+RF04.U: Editar un usuario
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Requisito que hace referencia a editar un determinado usuario de la Base
+ de Datos
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+RF05.U: Eliminar un usuario
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Requisito que hacer referencia a eliminar un determinado usuario de la Base
+ de Datos
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+RF06.U: Eliminar todos los usuarios
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Requisito que hacer referencia a eliminar todos los usuarios de la Base
+ de Datos
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+Cabe destacar que el requisito RF02.U y RF06.U están sujeto a restricciones
+ dado que son agujeros de seguridad.
+ Solo podrán hacer uso de dichas funcionalidades los administradores.
+\end_layout
+
+\begin_layout Subsubsection
+Requisitos relacionados con las publicaciones
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+RF01.P: Obtener una publicación
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Requisito que hace referencia a obtener una determinada publicación de la
+ Base de Datos
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+RF02.P: Obtener todas las publicaciones
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Requisito que hacer referencia a obtener todas las publicaciones almacenadas
+ en la Base de Datos
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+RF03.P: Añadir una publicación
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Requisito que hace referencia a añadir una publicación a la Base de Datos
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+RF04.P: Editar una publicación
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Requisito que hace referencia a editar una determinada publicación
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+RF05.P: Eliminar un publicación
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Requisito que hace referencia a eliminar una determinada publicación de
+ la Base de Datos
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+RF06.P: Eliminar todas las publicaciones
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Requisito que hace referencia a eliminar todas las publicaciones de la Base
+ de Datos
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+Los requisitos RF02.U y RF06.U están sujetos a restricciones, dado que son
+ agujeros de seguridad.
+ Solo podrán hacer uso de dichas funcionalidades los administradores
+\end_layout
+
+\begin_layout Subsubsection
+Requisitos relacionados con los comentarios
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+RF01.C: Obtener un determinado comentario
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Requisito que hace referencia a obtener un determinado comentario de la
+ Base de Datos
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+RF02.C: Obtener todos los comentarios
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Requisito que hacer referencia a obtener todos los comentarios almacenadas
+ en la Base de Datos
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+RF03.C: Añadir un comentario
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Requisito que hace referencia a añadir un comentario a la Base de Datos
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+RF04.C: Editar un comentario
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Requisito que hace referencia a editar un determinado comentario
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+RF05.C: Eliminar un comentario
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Requisito que hace referencia a eliminar un determinado
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+RF06.C: Eliminar todos los comentarios
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Requisito que hace referencia a eliminar todos los comentarios de la Base
+ de Datos
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+Los requisitos RF02.C y RF06.C están sujetos a restricciones, dado que son
+ agujeros de seguridad.
+ Solo podrán hacer uso de dichas funcionalidades los administradores
+\end_layout
+
+\begin_layout Subsubsection
+Requisitos relacionados con la búsqueda de usuarios dado un determinado
+ criterio.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+RF01.S: Buscar a un usuario dado su nombre completo
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Requisito que hace referencia a buscar al usuario a través de la Base de
+ Datos, teniendo en cuenta que el usuario nos proporcionan memora el nombre
+ de dicho usuario
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+RF02.S: Buscar a un usuario dado su nombre de usuario (
+\emph on
+nick
+\emph default
+ o alias):
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Requisito que hace referencia a buscar al usuario a través de la Base de
+ Datos, teniendo en cuenta que el usuario nos proporciona el 
+\emph on
+nick
+\emph default
+ o alias de dicho usuario
+\end_layout
+
+\end_deeper
+\begin_layout Subsubsection
+Requisitos relacionados con el perfil de usuario.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+RF01.PR: Obtener el perfil de un determinado usuario.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Requisito que hace referencia a obtener el perfil de un determinado usuario
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+RF02.PR: Editar el perfil de un determinado usuario
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Requisito que hace referencia a editar el perfil de un determinado usuario
+\end_layout
+
+\end_deeper
+\begin_layout Subsubsection
+Requisitos relacionados con la descarga de archivos
+\end_layout
+
+\begin_layout Standard
+Como hemos especificado anteriormente, la API REST esta especialmente diseñada
+ para dar sus servicios a una plataforma con algún tipo de estructura social.
+ Por tanto, es posible la descarga de determinados archivos.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+RF01.D: Descarga de imágenes
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Requisito que hace referencia a descargar una determinada imagen de la Base
+ de Datos.
+ Solo podrán hacer uso de esta funcionalidad los administradores.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+
+\series bold
+Requisitos relacionados con las relaciones de amistad.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+RF01.F: Obtener un determinado amigo
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Requisito que hace referencia a obtener un determinado amigo de la Base
+ de Datos
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+RF02.F: Agregar un determinado amigo
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Requisito que hace referencia a agregar a un amigo a la lista de amigos.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+RF03.F: Eliminar un determinado amigo
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Requisito que hace referencia a eliminar a un amigo de la lista de amigos.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+RF04.F: Obtener las publicaciones de tus amigos
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Requisito que hace referencia a obtener las publicaciones de todos tus amigos
+ (ordenadas por fecha de subida)
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+RF05.F: Obtener todos tus amigos
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Requisito que hace referencia a obtener todos los amigos de la lista de
+ amigos
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+RF06.F: Obtener una sugerencia.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Requisito que hace referencia a obtener una sugerencia teniendo en cuenta
+ los amigos con los que has tenido contacto hasta el momento.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+
+\series bold
+Requisitos relacionados con el inicio de sesión y el registro de usuarios.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+RF01.LR: Iniciar sesión
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Requisito que hace referencia a, dado un nombre de usuario y una contraseña,
+ iniciar sesión.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+RF02.LR: Cerrar sesión
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Requisito que hace referencia a poder cerrar la sesión de un determinado
+ usuario.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+RF03.LR: Registrar a un determinado usuario
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Requisito que hace referencia a, dados una serie de datos que se requieren
+ por parte del usuario, registrar a un determinado usuario dentro del sistema.,
+ con el objetivo de poder iniciar sesión.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+RF04.LR: Obtener al usuario que ha iniciado sesión
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Requisito que hace referencia a obtener el usuario que ha iniciado sesión
+ en ese momento.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+
+\series bold
+Requisitos relacionados con el reconocimiento facial
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+RF01.VA: Obtener caras de una determinada foto
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Requisito que hace referencia a obtener las caras de las amistades de un
+ determinado usuario en una foto
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+RF02.VA: Obtener sugerencias sobre las amistades de un determinado usuario
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Requisito que hace referencia a, dadas una serie de caras relacionadas con
+ usuarios, obtener sugerencias para los usuarios.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+RF03.VA: Enlazar caras con usuarios
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Requisito que hace referencia a la posibilidad de enlazar caras en una foto
+ con un usuario.
+\end_layout
+
+\end_deeper
+\begin_layout Subsection
+Requisitos no funcionales
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+RNF01: Conexión estable a Internet
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Dado que el servicio es desplegado en un servidor virtual privado, es necesario
+ que el usuario que pretenda hacer uso de dicho servicio este conectado
+ a Internet.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+RNF02: Tiempo de respuesta razonable
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Requisito no funcional imprescindible en un servicio de este tipo.
+ Este requisito puede depender de otros factores, como el tipo de conexión
+ que use el cliente a la hora de usar el servicio.
+ Pero también es responsabilidad del desarrollador hacer que estos tiempos
+ se reduzcan lo máximo posible.
+ Mediante búsquedas eficientes, uso de estructuras de datos adecuadas, alojamien
+to con buenas prestaciones, procurando reducir la complejidad del código
+ lo máximo posible, etc.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+RNF03: Conexión estable a la Base de Datos
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+En este caso, el servicio se conecta directamente a la Base de Datos para
+ poder almacenar los datos.
+ Una mala conexión a la Base de Datos implicaría directamente la inutilización
+ del servicio REST.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+RNF04: Disponibilidad de un servidor remoto donde poder desplegar el servicio
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+El desarrollo del servicio REST se realiza en local, pero es necesario tener
+ un alojamiento remoto donde poder desplegar el servicio.
+ Es necesario que el cliente pueda utilizar el servicio esté donde esté.
+ Como ya he dicho antes, en este caso se contrató un alojamiento de tipo
+ VPS (Servidor Virtual Privado) Se decidió que el Sistema Operativo fuese
+ un Debian GNU/Linux versión 9 (stretch), la cual es la versión mas estable
+ del SO.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+RNF05: Concordancia con respecto al estándar HTTP
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Este requisito está implícito en la definición de una API REST.
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+before "REST es cualquier interfaz entre sistemas que use HTTP para obtener datos o generar operaciones sobre esos datos en todos los formatos posibles, como XML y JSON"
+key "BBVAOPEN4U2016"
+literal "false"
+
+\end_inset
+
+.
+ Recibir peticiones HTTP, interpretarlas y en función de ello contestar
+ con una respuesta HTTP con las cabeceras adecuadas es crucial en un servicio
+ de este tipo.
+ Se entra en detalle en requisitos posteriores.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+RNF06: Asegurar la disponibilidad, integridad y confidencialidad de los
+ datos
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Requisito que hace referencia a cumplir los tres pilares básicos de la Seguridad
+ Informática: disponibilidad, integridad y confidencialidad de la información.
+ En un servicio de este tipo, y además enfocado hacia una plataforma de
+ carácter social, es importante de cara al cliente asegurarse de que la
+ información no se ve comprometida.
+ Ello se consigue cifrando la información, utilizando certificados SSL proporcio
+nados por alguna entidad certificadora, no dar a los usuarios ordinarios
+ el poder de entrar a cualquier punto del servicio, poseer administradores
+ que controlen la actividad de los usuarios ordinarios, etc.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+RNF07: Recibir peticiones HTTP
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Requisito que hace referencia a la capacidad de recibir peticiones que siguen
+ el estándar HTTP.
+ Dichas peticiones tienen que pasar por los controles de seguridad del servicio.
+ Por ejemplo, a todas las peticiones HTTP les precede una petición de tipo
+ especial que establece las condiciones que se deben de cumplir para que
+ el servicio puedan intercambiar información.
+ El servicio debe de comprender dichas peticiones y actuar en consecuencia.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+RNF08: Contestar peticiones HTTP
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Requisito que hace referencia a la capacidad de responder peticiones que
+ siguen el estándar HTTP.
+ Siguiendo con lo dicho en el requisito 
+\series bold
+RNF07
+\series default
+, el servicio debe de ser capaz contestar esas peticiones y dejarle claras
+ las condiciones al cliente para así poder empezar a intercambiar información.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+RNF09: Mantenibilidad
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Requisito que hace referencia a mantener la mantenibilidad del código.
+ En este caso, la mantenibilidad del código está asegurada, como se ha dicho
+ anteriormente, se usa para el desarrollo de la aplicación el entorno de
+ programación derivado de Eclipse: Spring Tool Suite.
+ Hace capaz el despliegue del servicio en un entorno local, donde modificar
+ el código sin riesgo.
+ Por otra parte, he asegurado la mantenibilidad separando el servicio internamen
+te por controladores, los cuales sirven a diferentes tipos de peticiones.
+ Pasa lo mismo con los archivos encargados de la configuración del servicio,
+ acceso a la Base de Datos, encriptación de la información, etc.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+RNF10: Documentación 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Requisito que hace referencia a proporcionar documentación consistente al
+ cliente, para que pueda hacer uso del servicio.
+ Gracias al uso de Spring Boot, fue simple construir una documentación consisten
+te gracias a Swagger 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Swagger"
+literal "false"
+
+\end_inset
+
+.
+ Swagger analiza los paquetes existentes en tu proyecto y genera la documentació
+n del servicio.
+ La documentación se genera en formato HTML y se puede llegar a ella fácilmente
+ a través de cualquier navegador.
+ Dicha documentación separa por secciones los diferentes controladores,
+ con sus métodos, lo que necesita el método, etc.
+ La documentación de Swagger incluso permite simular la petición pasando
+ los datos pedidos.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+RNF11: Escalibilidad
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Requisito que hace referencia a que el servicio sea capaz de escalar debidamente
+, por ejemplo para incorporar mas funcionalidades, ser capaz de almacenar
+ mas información, atender peticiones desde diferentes orígenes, etc.
+\end_layout
+
+\end_deeper
+\begin_layout Section
+Diagrama de casos de uso
+\end_layout
+
+\begin_layout Standard
+Una vez definido el documento de especificación de requisitos se procede
+ a la realización del modelo del problema que se desea resolver, para ello
+ se realiza un diagrama de casos de uso.
+ 
+\end_layout
+
+\begin_layout Standard
+Solo existe un tipo de actor, que es el lado del cliente.
+ Las acciones que realiza el servicio es la funcionalidad que el cliente
+ puede usar.
+ En la Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Diagrama-de-casos"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Diagrama-de-casos-1"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ y 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Diagrama-de-casos-2"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ los casos de uso derivados de los requisitos funcionales ya mencionados.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename C:/Users/agust/Desktop/tfg Use Case diagram.jpg
+	scale 45
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Diagrama de casos de uso (Servicio de gestión de la lógica de la aplicación)
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Diagrama-de-casos"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename C:/Users/agust/Desktop/UseCaseDiagram_2.png
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Diagrama de casos de uso (Servicio de gestión de la lógica de la aplicación)
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Diagrama-de-casos-1"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename FaceDiagram.png
+	scale 85
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Diagrama de casos de uso (Servicio de reconocimiento facial) 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Diagrama-de-casos-2"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Recursos utilizados
+\end_layout
+
+\begin_layout Standard
+Antes de finalizar el análisis del proyecto desarrollado, es necesario hablar
+ sobre los recursos utilizados.
+ Ya se detallo anteriormente las herramientas utilizadas en este proyecto.
+ Pero han sido necesarios otros recursos importantes para poder llevar a
+ cabo este proyecto.
+\end_layout
+
+\begin_layout Subsection
+Servidor Virtual Privado (VPS)
+\end_layout
+
+\begin_layout Standard
+Antes de entrar en detalles, comencemos en una pequeña definición extraída
+ del soporte de GoDaddy
+\begin_inset CommandInset citation
+LatexCommand cite
+key "GoDaddy"
+literal "false"
+
+\end_inset
+
+, un distinguido proveedor de alojamientos web y dominios:
+\begin_inset CommandInset citation
+LatexCommand cite
+before "Al ocupar el espacio entre los formatos de alojamiento dedicado y compartido, un servidor virtual privado (VPS, por sus siglas en inglés) ofrece muchas de las capacidades y funciones de los servidores dedicados, incluyendo acceso a administrador (raíz) y direcciones IP dedicadas, pero a un precio mucho más bajo"
+key "ServidoresVPSGoDaddy"
+literal "false"
+
+\end_inset
+
+.
+ Es decir, un VPS no es más que un servidor dedicado de menos coste compartido
+ con otros usuarios.
+ Así que se decidió que podría ser una buena elección.
+ En mi caso, el servidor no se contrató en GoDaddy, si no a una empresa
+ francesa llamada OVH, proveedora de alojamiento web y dominios
+\begin_inset CommandInset citation
+LatexCommand cite
+key "OVH"
+literal "false"
+
+\end_inset
+
+.
+ Lo que quiero destacar de haber contratado el alojamiento de la aplicación
+ en dicha empresa es que consta con una interfaz de gestión para el cliente
+ impecable, con una gran usabilidad y con un diseño acorde al estilo de
+ la pagina web de la empresa.
+ Ademas, dicha interfaz hace posible poder reinstalar el servidor entero,
+ reiniciarlo, cambiar de propietario, la posibilidad de mejorar el VPS,
+ etc.
+ Además, de información relativa al servidor como la localización, su IP,
+ quien es el administrador, el tipo de SO, el estado del servidor, etc.
+\end_layout
+
+\begin_layout Standard
+A la hora de contratar el servidor se le pide al cliente que Sistema Operativo
+ utilizar, se selecciona y la empresa te proporciona las herramientas necesarias
+ para empezar a utilizarlo.
+ De hecho, este fue uno de los primeros pasos cuando se quiso abordar el
+ problema especificado anteriormente, el contratar un alojamiento web.
+\end_layout
+
+\begin_layout Subsubsection*
+Tomcat 8
+\end_layout
+
+\begin_layout Standard
+Para que fuese posible el despliegue del servicio encargado de la gestión
+ de la aplicación, era necesario un contenedor web donde poder desplegarla.
+ Tomcat da la capacidad de desplegar aplicaciones web que vienen empaquetadas
+ en formato WAR o JAR, dependiendo de lo que se quiera hacer.
+ Tomcat provee un administrador donde poder ver las aplicaciones que se
+ tienen desplegadas y su ruta de acceso.
+ Por eso, mientras que en el local, durante el desarrollo en local de la
+ aplicación se accede a la propia maquina (http://localhost:8080), en producción
+ se accede al servicio a través de la IP remota del VPS, apuntando al puerto
+ correspondiente y haciendo referencia a la aplicación web desplegada (http://IP
+:8080/APP).
+ Tomcat casi siempre va en combinación de Apache, con el objetivo de configurar
+ el proxy, del cual hablaremos más adelante.
+ La instalación de Tomcat 8 también fue uno de los primeros pasos a la hora
+ de abordar el problema.
+\end_layout
+
+\begin_layout Subsubsection*
+Python, Anaconda y librerías
+\end_layout
+
+\begin_layout Standard
+Ya se ha hablado de que se tiene como objetivo incluir una mejora a la aplicació
+n web que tenga relación con la Visión Virtual.
+ Y: ¿qué es la Visión Artificial sin Python? Cabe destacar que el VPS tenia
+ Python instalado.
+ Cambien hay que destacar que existen distribuciones de Python, especializadas
+ en aprendizaje automático entre otros campos.
+ Además con Anaconda ya no es necesario utilizar el comando pip que se utiliza
+ con Python para la instalación de librerías, se utiliza el comando conda.
+\end_layout
+
+\begin_layout Standard
+Por otra parte, para poder proceder con el desarrollo, fue necesario la
+ instalación de librerías relacionadas con la conexión a la Base de Datos
+ (mysql), con el framework que permite el desarrollar el servicio de reconocimie
+nto facial (bottle y face_recognition), con la lectura de directorios y
+ archivos del servidor (os), con el reconocimiento facial (face_recognition),
+ con el deep learning (dlib), etc.
+ 
+\end_layout
+
+\begin_layout Subsection
+Dominio y certificado SSL
+\end_layout
+
+\begin_layout Standard
+Acceder a la aplicación web a través de la IP no es seguro, así que se decidió
+ la contratación de un dominio acompañado del cifrado SSL pertinente.
+ Primero se procedió a registrar el nombre del dominio.
+ Se realizó a través de la misma empresa donde se contrató el servidor.
+ Después de la contratación, simplemente se creo un registro de tipo A apuntando
+ a la IP del VPS para poder acceder directamente al dominio.
+\end_layout
+
+\begin_layout Standard
+Por otra parte, por mucho dominio que se tuviese, era necesario que las
+ peticiones y las respuesta estuviesen cifradas.
+ Así que, a través de Let's Encrypt 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "LetsEncrypt"
+literal "false"
+
+\end_inset
+
+, empresa encargada de proveer certificados SSL gratuitos, se cifró el trafico
+ del servicio y el lado cliente.
+\end_layout
+
+\begin_layout Standard
+Al igual que con el servidor privado, la interfaz de gestión que proporciona
+ OVH, da la funcionalidad necesaria para poder administrar el dominio.
+ La creación, edición y eliminación de registros relacionados con el dominio,
+ gracias a esto se ha conseguido apuntar el dominio a la IP consultar los
+ servidores DNS, realizar redirecciones, etc.
+\end_layout
+
+\begin_layout Subsection
+Otros recursos
+\end_layout
+
+\begin_layout Standard
+Aparte de lo ya mencionado, han sido necesarios otros recursos para el correcto
+ funcionamiento de la aplicación.
+ Después de contratar el dominio y enlazarlo con la IP correspondiente,
+ se presento el problema de que era necesario utilizar el puerto 8080 para
+ poder acceder al servicio.
+ Por tanto, fue necesario la instalación de Apache con el fin de configurar
+ un proxy que recibiese todo el tráfico del servicio y así poder eliminar
+ el puerto del dominio.
+\end_layout
+
+\begin_layout Standard
+Para realizar la conexión remota con el servidor y poder realizar labores
+ administrativas en el mismo e instalar muchos de los recursos nombrados
+ anteriormente fue necesario SSH.
+ Mediante un programa llamado PuTTY me fue posible la conexión remota desde
+ cualquier dispositivo.
+ Ahora bien, en este caso concreto, la empresa a la cual se le contrato
+ el servidor provee la funcionalidad dentro de su Interfaz de Gestión de
+ poder conectarse al servidor con un simple clic, así que en cierta manera
+ se podría prescindir de este recurso.
+\end_layout
+
+\begin_layout Chapter
+Diseño e implementación
+\end_layout
+
+\begin_layout Standard
+Después del análisis del proyecto, se procede a explicar como se ha realizado
+ el diseño e implementación de la solución al problema presentado al principio
+ de este documento.
+ 
+\end_layout
+
+\begin_layout Section
+Herramientas utilizadas
+\end_layout
+
+\begin_layout Standard
+En el capitulo de Análisis, concretamente en el capitulo de recursos utilizados,
+ se entro un poco en detalle de las herramientas utilizadas.
+ En esta sección se hablará más en detalle de ello.
+\end_layout
+
+\begin_layout Subsection
+Hardware
+\end_layout
+
+\begin_layout Standard
+Dado que se trata del desarrollo de una aplicación software, las herramientas
+ hardware utilizados han sido escasas en número.
+ Entre las herramientas hardware utilizadas, se encuentran: 
+\end_layout
+
+\begin_layout Itemize
+Ordenador de sobremesa.
+ Componentes a destacar:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\series bold
+Procesador
+\series default
+ 
+\series bold
+(CPU):
+\series default
+ AMD Ryzen 3 1300X 3.7Ghz
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Tarjeta gráfica (GPU)
+\series default
+: Asus GeForce GTX 1060 OC Dual 3GB GDDR5
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Memoria RAM:
+\series default
+ Crucial DDR4 2133 PC4-17000 8GB CL15
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Disco Duro:
+\series default
+ Seagate BarraCuda 3.5" 1TB SATA3
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Ordenador portátil ASUS.
+ Componentes a destacar:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\series bold
+Procesador
+\series default
+ 
+\series bold
+(CPU):
+\series default
+ Intel Core i5-6300HQ
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Tarjeta gráfica (GPU)
+\series default
+: Nvidia GeForce GTX 950M
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Monitor Samsung 32''.
+\end_layout
+
+\begin_layout Subsection
+Software
+\end_layout
+
+\begin_layout Standard
+Al contrario que en la subsección anterior, aquí las herramientas software
+ utilizadas son abundantes.
+ A continuación se procede a detallar dichas herramientas:
+\end_layout
+
+\begin_layout Subsubsection
+GitHub y SmartGit
+\end_layout
+
+\begin_layout Standard
+Antes de hablar de estas herramientas, creo necesario hablar de Git.
+ Herramienta que ha supuesto un pilar muy importante para el desarrollo
+ del proyecto.
+ Git es una herramienta de control de versiones.
+ Es especialmente recomendable cuando el mismo código es utilizado por mas
+ de una persona, dado que tiene una herramienta para la solución de conflictos.
+ En mi caso, es cierto que el proyecto a realizar tenia algún tipo de relación
+ con una de mis compañeras, pero dado que nuestras partes en el desarrollo
+ están perfectamente parceladas, prácticamente ninguno de los dos tocaba
+ el trabajo del otro.
+ 
+\end_layout
+
+\begin_layout Standard
+Por otra parte, en mi caso he necesitado Git para poder tener constancia
+ de versiones estables de la aplicación, y sobre todo para tener un registro
+ de lo que se ha haciendo y de los avances durante el tiempo que ha durado
+ el desarrollo.
+\end_layout
+
+\begin_layout Standard
+En otro orden de cosas, GitHub es un sitio web donde alojar proyectos que
+ han sido desarrollados colaborativamente.
+ En mi caso, usé GitHub para poder alojar el proyecto y poder hacer uso
+ de él.
+ Consta de una documentación impecable y proporciona una serie de facilidades
+ que muchas otras no ofrecen.
+ Después de subir el proyecto y por tanto crear un repositorio, GitHub te
+ proporciona una URL pública con la que cualquiera puede acceder y revisar
+ el código.
+\end_layout
+
+\begin_layout Standard
+Por último, tenemos SmartGit.
+ SmartGit es un cliente con interfaz gráfica para Git, y obviamente tiene
+ la posibilidad de conectar con GitHub y los repositorios que se posean.
+ Con esta herramienta, se fue capaz de tener un control gráfico del proyecto.
+ Simplemente proporcionando la URL del repositorio en GitHub, es posible
+ tener el control del mismo desde el cliente.
+ Cabe destacar que dicho cliente no es un sitio web, si no una aplicación
+ de escritorio, por lo que resulta más útil a la hora de hacer uso de ella.
+\end_layout
+
+\begin_layout Subsubsection
+Lenguaje de programación y framework.
+\end_layout
+
+\begin_layout Standard
+El lenguaje de programación que se ha utilizado ha sido Java.
+ Una de las razones principales fue que se decidió utilizar Spring, como
+ framework de Java para el desarrollo web.
+ Spring trae consigo una serie de módulos para hacer más sencillo aún el
+ desarrollo de la aplicación web.
+ En mi caso, he utilizado los módulos de Spring: Spring Boot, Spring Data
+ y Spring MVC.
+ Gracias a Spring y a sus módulos, fue posible no solamente el desarrollo
+ de los controladores encargados de atender las peticiones HTTP desde el
+ lado del cliente, si no ademas establecer la configuración de ciertas funcional
+idades de la aplicación web.
+ 
+\end_layout
+
+\begin_layout Standard
+A parte de los módulos enumerados anteriormente, se utilizó otro más Spring
+ Security.
+ Spring Security es el modulo de Spring encargado de la seguridad de la
+ aplicación.
+ Gracias a dicho módulo se ha sido capaz de:
+\end_layout
+
+\begin_layout Itemize
+Establecer la configuración CORS (Intercambio de Recursos de Origen Cruzado),
+ 
+\end_layout
+
+\begin_layout Itemize
+Establecer una blacklist de 
+\emph on
+endpoints
+\emph default
+ 
+\end_layout
+
+\begin_layout Itemize
+Establecer los 
+\emph on
+endpoints
+\emph default
+ que necesitan autenticación para acceder a ellos
+\end_layout
+
+\begin_layout Itemize
+Establecer qué mecanismo se seguirá para el inicio de sesión
+\end_layout
+
+\begin_layout Itemize
+Encriptación de datos sensibles
+\end_layout
+
+\begin_layout Standard
+Spring, además, gracias a los módulos mencionados anteriormente, abstrae
+ al desarrollador de la creación de las tablas a la hora de la persistencia
+ con la Base de Datos.
+ Me bastó con crear las clases necesarias, anotar dichas clases para asegurar
+ que Spring hiciese la conversión, y con desplegar la aplicación, las clases
+ eran transcritas a tablas en la Base de Datos.
+\end_layout
+
+\begin_layout Standard
+En otro orden de cosas, no solo se ha utilizado Java.
+ Dado que se quiere hacer uso de la Visión Artificial para incluir una mejora
+ a la aplicación, se usa Python.
+ La idea es construir otro servicio con Python, que proporcione servicios
+ relacionados con el reconocimiento facial.
+ A raíz del uso de Python para incluir dichas mejoras, fueron necesarias
+ el uso de varias librerías.
+ A destacar tenemos:
+\end_layout
+
+\begin_layout Itemize
+Librería relacionada con la conexión a la Base de Datos.
+ Dado que es necesario que se pudiese acceder a la Base de Datos, tanto
+ para consulta como para escritura, fue necesario el uso de esta librería.
+ (mysql.connector 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "MySQLConnectorPython"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Librería relacionada con el reconocimiento facial.
+ (face_recognition 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "FaceRecognitionLibrary"
+literal "false"
+
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Itemize
+Librería relacionada con la validación de los token JWT.
+ (PyJWT 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "JWTPythonLibrary"
+literal "false"
+
+\end_inset
+
+) 
+\end_layout
+
+\begin_layout Itemize
+OpenCV.
+ Librería relacionada con la Visión Artificial.
+ (cv2 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "OpenCV"
+literal "false"
+
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Itemize
+Framework web para el desarrollo del servicio de reconocimiento facial (bottle
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Bottle"
+literal "false"
+
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Standard
+Se podría decir, que estas herramientas han sido las mas importantes a la
+ hora del desarrollo de la aplicación.
+ Gracias a ellas, ha sido posible abordar prácticamente todos los problemas
+ planteados y así poder llegar a una solución.
+\end_layout
+
+\begin_layout Subsubsection
+Entorno de programación
+\end_layout
+
+\begin_layout Standard
+Después de la subsección anterior, se podría intuir qué entorno de programación
+ es el utilizado en este proyecto.
+ El entorno de programación utilizado es STS (Spring Tool Suite).
+ STS es un entorno de programación derivado de Eclipse enfocado especialmente
+ al desarrollo de aplicaciones en Spring Framework.
+ Se decidió utilizar este entorno de programación para el desarrollo porque
+ este proyecto no es el primero que se aborda, durante la carrera he tenido
+ que realizar desarrollos similares y este entorno es el ideal si se decide
+ utilizar Spring como framework para el desarrollo.
+ Dicho entorno de programación, al igual que cuando es necesario utilizar
+ Eclipse, requiere tener instalado Java y Java JDK.
+ 
+\end_layout
+
+\begin_layout Standard
+Además, se fue capaz de desplegar la aplicación en local para la prueba
+ de la misma, simulando su puesta en funcionamiento en producción.
+ Una vez que se desarrollaba una funcionalidad especifica del servicio,
+ se fue capaz de realizar el empaquetamiento de la misma, con el fin de
+ poner la aplicación en producción.
+ El entorno de programación da la posibilidad de realizar el empaquetamiento
+ ajustando un par de opciones.
+ 
+\end_layout
+
+\begin_layout Standard
+Por otra parte, al igual que Eclipse, proporciona soporte para test unitarios,
+ utilizando Spring para ello.
+ En una de las subsecciones anteriores se ha hablado de Git para el control
+ de versiones, esta herramienta me ha permitido realizar operaciones de
+ Git desde el propio entorno.
+ Además, se indica junto al proyecto en cada momento la rama en la que te
+ encuentras y el repositorio actual.
+\end_layout
+
+\begin_layout Standard
+Por último, tenemos PyCharm.
+ Entorno de programación especializado en Python.
+ Dado que se pretende realizar tareas de Visión Artificial que implican
+ el uso de Python, es necesario el uso de PyCharm.
+ Permite configurar un entorno de Anaconda para la ejecución del código.
+ Además, da la capacidad de instalar paquetes de Python desde las opciones
+ del proyecto, tiene una potente herramienta para depurar el código, etc.
+\end_layout
+
+\begin_layout Subsubsection
+Gestor de la Base de Datos.
+\end_layout
+
+\begin_layout Standard
+Dado que se trata de una Base de Datos MariaDB, fue necesario una herramienta
+ que facilitase la gestión de dicha Base de Datos.
+ Después de instalar MySQL en el VPS, se decidió el uso de DBeaver.
+ DBeaver es una herramienta de gestión de Bases de Datos MySQL, de código
+ libre y con una interfaz de usuario muy intuitiva.
+ Basta con elegir qué tipo de Base de Datos se quiere gestionar y especificar
+ los datos de conexión.
+ La herramienta hace lo demás.
+ Con esta herramienta, he sido capaz de hacer cambios en la Base de Datos
+ permitiendo la posibilidad de tanto hacerlo mediante la interfaz de gestión
+ como de ejecutar sentencias SQL que la herramienta se encarga de gestionar.
+\end_layout
+
+\begin_layout Subsubsection
+Métricas
+\end_layout
+
+\begin_layout Standard
+Por último, sobre todo enfocado para el tema de métricas, se ha utilizo
+ SonarQube.
+ Esta herramienta código abierto, se encarga de analizar el código fuente
+ en busca de errores, código que en un futuro podría ocasionar errores graves,
+ mide la cobertura del código, etc.
+ Basta con indicarle el tipo de proyecto a analizar, el lenguaje utilizado
+ y la herramienta da las indicaciones pertinentes para realizar el análisis
+ del código.
+ Dicho análisis se traducirá en las medidas mencionadas anteriormente.
+ Se entrará más en detalle sobre estas métricas en el capítulo de métricas.
+\end_layout
+
+\begin_layout Section
+Arquitectura del software
+\end_layout
+
+\begin_layout Standard
+En esta sección se describirán cada una de las partes de la solución que
+ se desarrolla.
+ Indicaré las características en cada subsección, separando dicha sección
+ por el tipo de servicio del que se hable.
+ 
+\end_layout
+
+\begin_layout Subsection
+Servicio de gestión de la lógica de la aplicación
+\change_inserted 253019401 1535799386
+
+\end_layout
+
+\begin_layout Standard
+En esta subsección se va a entrar en detalle sobre el servicio desarrollado
+ con ayuda de Spring Framework.
+ Como introducción se puede ver en la Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Estructura-del-proyecto"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ la estructura del proyecto, organizada por paquetes para mantener la mantenibil
+idad del código.
+ Como ya se dijo en capítulos anteriores junto al nombre del proyecto se
+ indica el repositorio y la rama actual.
+ En un proyecto en Spring Boot, se distinguen tres carpetas principales
+ 
+\begin_inset Quotes eld
+\end_inset
+
+src/main/java
+\begin_inset Quotes erd
+\end_inset
+
+, 
+\begin_inset Quotes eld
+\end_inset
+
+src/main/resources
+\begin_inset Quotes erd
+\end_inset
+
+ y 
+\begin_inset Quotes eld
+\end_inset
+
+src/test/java
+\begin_inset Quotes erd
+\end_inset
+
+.
+ En la primera carpeta se encuentra el código fuente de la aplicación, eso
+ es, la funcionalidad completa de la aplicación.
+ En la segunda carpeta se encuentran los recursos estáticos (ficheros .js,
+ .css, .png, etc) y las plantillas de la aplicación si las hubiese, además
+ del fichero de configuración 
+\begin_inset Quotes eld
+\end_inset
+
+application.properties
+\begin_inset Quotes erd
+\end_inset
+
+ del que se hablará más adelante.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename ProjectStructure.PNG
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Estructura del proyecto 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Estructura-del-proyecto"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+La estructura de todo el servicio desarrollado en Spring tiene la estructura
+ que se ve en la Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Diagrama-API-REST"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ A lo largo del capítulo se irá haciendo referencia a dicha figura con el
+ objetivo de ir explicando cada una de las partes.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Spring.png
+	scale 35
+	rotateOrigin center
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Diagrama del servicio en Spring 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Diagrama-API-REST"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Spring IoC Container y los beans
+\end_layout
+
+\begin_layout Standard
+Antes de entrar en detalle sobre cada una de las partes de la aplicación,
+ es necesario explicar cómo Spring es capaz de realizar todo lo que se va
+ a ver en futuras secciones.
+ En primer lugar, se tienen los beans.
+ Los beans son los objetos que componen la columna vertebral de la aplicación
+ y son administrados por el contenedor de Spring (Spring IoC Container).
+ Cabe destacar que un bean podría ser un controlador, acceso a la base de
+ datos, configuración de la seguridad de la aplicación, etc.
+ Es decir, los beans son los objetos que contienen la funcionalidad de la
+ aplicación y son configurados por el contenedor de Spring.
+ El contenedor cuenta con el principio de IoC (Inversion of Control) también
+ conocido como Inyección de Dependencias.
+ Es un proceso en el cual los objetos definen sus dependencias, esto es,
+ otros objetos con los que trabajan dichos objetos, los argumentos del construct
+or, propiedades que se establecen en la instancia del o
+\end_layout
+
+\begin_layout Standard
+El contenedor de Spring sabe qué objetos instanciar, configurar o ensamblar
+ gracias a los metadatos de configuración.
+ Estos metadatos de configuración están representados a su vez por un fichero
+ XML, por anotaciones Java o por código Java.
+ El contenedor de Spring esta representado por la interfaz BeanFactory y
+ ApplicationContext.
+ La interfaz BeanFactory provee un mecanismo avanzado de configuración capaz
+ de administrar cualquier objeto, ApplicationContext es una interfaz que
+ implementa BeanFactory y además de las características propias de la interfaz
+ BeanFactory, implementa una serie de características mas avanzadas para
+ el manejo de otro tipo de servicios.
+\end_layout
+
+\begin_layout Standard
+En resumen, el desarrollador provee a través de un fichero XML, mediante
+ anotaciones o mediante código Java, los beans que necesita el contenedor
+ de Spring.
+ Dicho contenedor se encargar de tomar esos beans y configurarlos, ensamblarlos
+ e instanciarlos.
+ Obsevando la Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Diagrama-API-REST"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, el contenedor Spring sería el recuadro azul, esto es, la base sobre la
+ construye todo lo demás.
+\end_layout
+
+\begin_layout Subsubsection
+Modelos
+\end_layout
+
+\begin_layout Standard
+Como ya se ha introducido en la sección de las herramientas utilizadas durante
+ el desarrollo, Spring abstrae al desarrollador de la transcripción de las
+ clases a las tablas en la Base de Datos.
+ Por lo que se tiene modelos basados en datos.
+ Suponiendo que se tiene configurada la conexión con la Base de Datos, en
+ cuanto la aplicación es desplegada es posible establecer determinadas opciones
+ para la creación de las tablas correspondientes y los datos contenidos
+ en dichas tablas.
+ 
+\end_layout
+
+\begin_layout Standard
+Para poder realizar la creación de estas tablas, es necesario la creación
+ de clases con una serie de anotaciones.
+ Se tienen que anotar las clases con el objetivo de constituyan una entidad
+ y puedan ser traducidas a tablas de la Base de Datos.
+ Además, hace falta especificar cuál será la clave primaria de la entidad.
+ Posteriormente, tanto en desarrollo local como en producción, una vez desplegad
+a la aplicación, Spring usando lo especificado en un fichero de configuración
+ del que se hablará más adelante, establece la conexión con la Base de Datos,
+ traduciendo las relaciones entre clases y las propias clases anotadas pertinent
+emente en tablas, con sus claves primarias y foráneas en el caso de que
+ existan relaciones.
+\end_layout
+
+\begin_layout Standard
+La estructura de los modelos queda representada en la Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Diagrama-Entidad-Relación"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Entrando más en detalle sobre dichos modelos tenemos:
+\end_layout
+
+\begin_layout Itemize
+Clase Usuario.
+ Podría decirse que es la entidad central de la aplicación.
+ Un usuario puede poseer:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+N publicaciones
+\end_layout
+
+\begin_layout Itemize
+N comentarios
+\end_layout
+
+\begin_layout Itemize
+N imágenes provenientes de las sus propias publicaciones
+\end_layout
+
+\begin_layout Itemize
+N amigos 
+\end_layout
+
+\begin_layout Itemize
+N caras procedentes de sus imágenes.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Clase Publicación.
+ Una publicación se compone de imágenes y comentarios.
+\end_layout
+
+\begin_layout Itemize
+Clase Comentario.
+ Un comentario solamente puede pertenecer a un usuario y a una publicación.
+\end_layout
+
+\begin_layout Itemize
+Clase Cara.
+ Las caras procedentes de las fotos, solo puede provenir de una sola foto
+ y pueden pertenecer a un solo usuario.
+ Cabe destacar que, estas caras que pertenecen al usuario son caras que
+ se han extraído de imágenes contenidas en publicación que el propio usuario
+ ha subido.
+ Está claro que, solamente serán caras de amistades del usuario.
+\end_layout
+
+\begin_layout Itemize
+Clase Imagen.
+ La clase Imagen solo puede pertenecer a una publicación y a un usuario.
+ Además puede poseer N caras extraídas de la propia foto.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename ERDiagramBD.png
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Diagrama Entidad-Relación 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Diagrama-Entidad-Relación"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Controladores
+\end_layout
+
+\begin_layout Standard
+Los controladores de la aplicación contienen toda la funcionalidad de la
+ aplicación.
+ Son el punto de acceso al que el cliente puede acceder para obtener los
+ recursos que necesita.
+ En este caso, pasa parecido que con los modelos.
+ Es necesario anotar la clase de cierta manera, para que Spring sepa que
+ una clase es un controlador que tiene como objetivo atender la solicitud
+ de recursos que hace el lado cliente.
+ Si nos fijamos en la Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Diagrama-API-REST"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ se tiene que los controladores serian el Servicio REST (1).
+ Se trata del punto de acceso que tiene el lado cliente para poder acceder
+ a los recursos que necesita.
+\end_layout
+
+\begin_layout Standard
+De este modo, una clase anotada como controlador, contendrá en su interior
+ una serie de método que se encargara de proveer recursos al lado cliente.
+ Cada método estará anotado pertinentemente.
+ Por cada método, es necesario decir qué tipo de método es (GET, POST, DELETE,
+ PATCH, etc) y qué ruta atiende.
+ Además, si la petición HTTP enviá parámetros en la URL, Spring provee de
+ funcionalidad para poder recoger estos parámetros y utilizarlos para los
+ fines que se crean necesarios.
+ 
+\end_layout
+
+\begin_layout Standard
+Spring tiene la capacidad de serializar la información que se devuelve al
+ lado cliente.
+ Siempre y cuando esta información sea serializable.
+ Por lo que, basta con crear una clase con atributos que sean serializables,
+ al crear una instancia de ese objeto y devolverlo, Spring haciendo uso
+ del serializador Jackson devolverá el objeto en formato JSON al lado cliente.
+ De esta forma, si tuviésemos un método GET que se encargase de devolver
+ un usuario determinado del sistema y suponiendo que la clase Usuario contiene
+ atributos serializables, la instancia de la clase Usuario que se debe devolver,
+ sera serializada y será devuelta en formato JSON al lado cliente.
+\end_layout
+
+\begin_layout Standard
+Por otra parte, la información que proviene del lado cliente puede ser interpret
+ada por Spring.
+ Si un método de tipo POST determinado recibiese un objeto de la clase Usuario,
+ bastaría con añadir un argumento al método anotado debidamente, de esta
+ forma, Spring se encargará de formar el objeto de dicha clase con la informació
+n en formato JSON proveniente del lado cliente.
+\end_layout
+
+\begin_layout Standard
+Ahora bien, los controladores que existen en la aplicación son:
+\end_layout
+
+\begin_layout Itemize
+Controlador de usuarios.
+ Este controlador se encarga de proveer recursos relacionados con los usuarios.
+ Y, en concordancia con los requisitos funcionales especificados en el capitulo
+ de Análisis, tenemos:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Obtener todos los usuarios.
+\end_layout
+
+\begin_layout Itemize
+Obtener a un usuario dado su identificador.
+\end_layout
+
+\begin_layout Itemize
+Editar a un usuario.
+\end_layout
+
+\begin_layout Itemize
+Eliminar a un usuario.
+\end_layout
+
+\begin_layout Itemize
+Creación de un usuario.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Controlador de publicaciones
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Obtener todas las publicaciones
+\end_layout
+
+\begin_layout Itemize
+Obtener una publicación dado su identificador
+\end_layout
+
+\begin_layout Itemize
+Editar una publicación
+\end_layout
+
+\begin_layout Itemize
+Eliminar una publicación
+\end_layout
+
+\begin_layout Itemize
+Añadir una publicación
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Controlador de comentarios
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Obtener todos los comentarios
+\end_layout
+
+\begin_layout Itemize
+Obtener un comentario dado su identificador
+\end_layout
+
+\begin_layout Itemize
+Editar un comentario
+\end_layout
+
+\begin_layout Itemize
+Eliminar un comentario
+\end_layout
+
+\begin_layout Itemize
+Añadir un comentario
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Controlador encargado de la página principal de la aplicación.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Carga de la página principal del lado servidor.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Controlador encargado del registro y del inicio de sesión
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Registrar a un usuario
+\end_layout
+
+\begin_layout Itemize
+Iniciar sesión de un determinado usuario
+\end_layout
+
+\begin_layout Itemize
+Obtener el usuario que ha iniciado sesión
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Controlador encargado de los amigos
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Obtener todos los amigos
+\end_layout
+
+\begin_layout Itemize
+Añadir a un amigo
+\end_layout
+
+\begin_layout Itemize
+Eliminar a un amigo
+\end_layout
+
+\begin_layout Itemize
+Obtener las publicaciones de tus amigos.
+\end_layout
+
+\begin_layout Itemize
+Obtener sugerencias de usuarios que podrían ser amistades
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Controlador de utilidades
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Búsqueda de un usuario dado su nombre de usuario
+\end_layout
+
+\begin_layout Itemize
+Búsqueda de usuarios dado su nombre
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Controlador del perfil de usuario
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Obtener un determinado perfil de usuario
+\end_layout
+
+\begin_layout Itemize
+Editar perfil de usuario
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Controlador de la descarga de imágenes
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Obtener una imagen determinada
+\end_layout
+
+\end_deeper
+\begin_layout Subsubsection
+Documentación
+\end_layout
+
+\begin_layout Standard
+Para la documentación, se usa un módulo de Spring llamado Springfox Swagger2.
+ Este módulo da la capacidad de realizar la documentación completa del servicio
+ en formato JSON de forma automatizada, basta con decirle en que paquete
+ están alojadas los controladores de la aplicación.
+ En cuanto se configura el módulo, indicando dónde se encuentran los controlador
+es y se despliega la aplicación, se habilita un 
+\emph on
+endpoint
+\emph default
+ donde poder acceder y poder descargar la documentación en formato JSON.
+\end_layout
+
+\begin_layout Standard
+Aparte de esto, existe otro modulo derivado del anterior llamado Springfox
+ Swagger UI.
+ Este módulo sigue el mismo proceso de generación de la documentación que
+ el modulo anterior, la diferencia es que habilita un 
+\emph on
+endpoint
+\emph default
+ donde es posible ver la documentación gráficamente en formato HTML y da
+ la capacidad de probar toda la funcionalidad desde dicha página.
+ Además, como se especificará más adelante, hay 
+\emph on
+endpoints
+\emph default
+ en los cuales hace falta iniciar sesión previamente, dicho modulo permite
+ simular dicho inicio de sesión y poder probar todos los 
+\emph on
+endpoints
+\emph default
+.
+\end_layout
+
+\begin_layout Standard
+Si se accede a la dirección base de la aplicación seguido de 
+\begin_inset Quotes eld
+\end_inset
+
+/swagger-ui.html
+\begin_inset Quotes erd
+\end_inset
+
+ se puede ver la documentación al completo, ordenando los métodos HTTP por
+ controlador.
+ Una vez se tiene todo configurado, se despliega la aplicación, y se accede
+ al 
+\emph on
+endpoint
+\emph default
+ habilitado por el propio modulo, el resultado se puede ver en la Figura
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Swagger-UI"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, extraída de la documentación de SpringFox 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "SpringFox"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Swagger UI.png
+	scale 45
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Swagger UI 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Swagger-UI"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Configuración y seguridad de la aplicación web
+\end_layout
+
+\begin_layout Standard
+Ya se introdujo en la sección de las herramientas utilizadas el uso de Spring
+ Security para asegurar la seguridad de la aplicación y además es necesaria
+ la configuración de la documentación, como ya se entró en detalle anteriormente.
+\end_layout
+
+\begin_layout Standard
+Ahora bien, para poder hacer que todo esto funcione, es necesario la configuraci
+ón a través de clases anotadas pertinentemente.
+ En total, se tienen 3 clases que se encargan de la configuración de la
+ seguridad de la aplicación:
+\end_layout
+
+\begin_layout Itemize
+Clase relacionada con la configuración de la seguridad de la web.
+ En esta clase, se establecen configuraciones básicas sobre la seguridad
+ de la aplicación.
+ Se establece la encriptación de la contraseña de los usuarios, se establece
+ la configuración CORS de la aplicación con el fin de una comunicación exitosa
+ del lado cliente.
+\end_layout
+
+\begin_layout Itemize
+Clase relacionada con el acceso a los recursos de la aplicación.
+ En esta clase, se establece una lista blanca y una lista negra de puntos
+ de acceso para el lado cliente.
+ Básicamente, se establecen los recursos a los que el lado del cliente puede
+ acceder y a los que necesita antes autenticación para poder acceder.
+\end_layout
+
+\begin_layout Itemize
+Clase relacionada con la autenticación basada en un token JWT.
+ En esta clase, se establece la configuración de la autorización con token.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+El tipo de autenticación que se usa en al aplicación es OAuth2.0 y JWT (JSON
+ Web Tokens).
+ Estos servicios proveen al lado cliente el acceso a los recursos de forma
+ limitada, siempre y cuando se proporcionen los datos de autenticación pertinent
+es.
+ Sabiendo el flujo del token JWT usando OAuth2.0 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "FlujoTokenJWT"
+literal "false"
+
+\end_inset
+
+, el lado cliente puede acceder a los recursos con la debida autenticación.
+ Concretamente se usa OAuth2.0 Password Grant Type.
+ Como se ve en el flujo de datos mostrado en la Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Flujo-de-datos"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Flujo-de-datos"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+proporcionado por la documentación de Oracle 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "OAuth"
+literal "false"
+
+\end_inset
+
+, se habilita un 
+\emph on
+endpoint
+\emph default
+, dado por la propia dependencia de OAuth, al cual es necesario hacer una
+ petición POST con una serie de parámetros que necesita OAuth para realizar
+ la autenticación.
+ Estos parámetros los establece OAuth, pero los valores los pone el lado
+ del servidor y los comparte con el lado del cliente.
+ 
+\end_layout
+
+\begin_layout Itemize
+El usuario introduce su usuario y contraseña (previo registro), el lado
+ del cliente realiza una petición a dicho 
+\emph on
+endpoint
+\emph default
+ con los parámetros pertinentes para obtener el token y a partir de ahí,
+ el cliente debe de mandar el token en cada petición que se haga para confirmar
+ que el usuario sigue autentificado.
+ El token tiene un tiempo de expiración de 12 horas establecido por el propio
+ servicio.
+ Ahora bien, dentro de la aplicación existe un fichero de configuración,
+ del cual se entrara en detalle más adelante.
+ En dicho fichero se establecen los valores para los parámetros que necesita
+ OAuth.
+ En esta clase, se toman esos valores dados en el fichero y se establece
+ la autenticación OAuth con la que el cliente debe acceder.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename OAuthTokenJWTSequenceDiagram.png
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Flujo de datos de OAuth2.0 con token JWT
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Flujo-de-datos"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Además, Spring permite configurar la aplicación web desde un fichero dentro
+ del propio proyecto.
+ El fichero se denomina 
+\begin_inset Quotes eld
+\end_inset
+
+application.properties
+\begin_inset Quotes erd
+\end_inset
+
+, en dicho fichero van parámetros de configuración globales.
+ En dicho fichero, se especifican los parámetros que necesita Spring para
+ la autenticación mediante OAuth2.0.
+\end_layout
+
+\begin_layout Subsubsection
+Repositorios
+\end_layout
+
+\begin_layout Standard
+Los repositorios o DAOs (Data Access Object) son las herramientas que se
+ encargan de la persistencia de la aplicación.
+ Proporcionan una capa de abstracción para el desarrollador, abstrayendolo
+ de las consultas SQL requeridas para poder añadir, consultar o eliminar
+ datos de la Base de Datos.
+\end_layout
+
+\begin_layout Standard
+La interfaz JpaRepository contiene una serie de métodos básicos que implementan
+ todas las operaciones que se pueden realizar (crear, leer, actualizar y
+ eliminar) con respecto a la Base de Datos.
+ Además es posible que el desarrollador pretenda realizar consultas cambiando
+ el criterio de búsqueda, para ello, simplemente se crea la cabecera del
+ método en la interfaz.
+ El nombre del método debe de seguir un formato concreto: Debe empezar por
+ 
+\begin_inset Quotes eld
+\end_inset
+
+findBy
+\begin_inset Quotes erd
+\end_inset
+
+ seguido del atributo de la clase por el que se quiere buscar.
+ Debe pasarse por parámetro el atributo por el que se quiere buscar, con
+ el tipo adecuado.
+ Si el objeto que se devuelve no es una lista, quiere decir que el método
+ encontrará uno y lo devolverá.
+ En cambio si se devuelve una lista, el método buscara todas las ocurrencias
+ del valor del parámetro que se le pase.
+\end_layout
+
+\begin_layout Standard
+Un solo repositorio no va a poder hacerse cargo de todos los modelos de
+ la aplicación, ya que cada repositorio se asocia al tipo del modelo sobre
+ el que se quieren realizar una serie de operaciones.
+\end_layout
+
+\begin_layout Standard
+Haciendo referencia a la Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Diagrama-API-REST"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, se trata de los Repositorios (3) o DAOs.
+ Es la ultima puerta que se cruza para almacenar la información en la Base
+ de Datos.
+ 
+\end_layout
+
+\begin_layout Subsubsection
+Servicios
+\end_layout
+
+\begin_layout Standard
+A diferencia del apartado anterior, los servicios no es una herramienta
+ proporcionada por Spring.
+ Se implementa por parte del desarrollador.
+ En mi caso, he implementado un servicio por cada uno de los repositorios
+ que existen.
+ Dichos servicios deben ir anotados pertinentemente y tendrán métodos que
+ implementaran los mismos métodos que el DAO.
+\end_layout
+
+\begin_layout Standard
+El objetivo de la creación de Servicios es proporcionar mantenibilidad al
+ código.
+ La creación de servicios implican proporcionar una capa de abstracción
+ para el desarrollador, de manera que si es necesario cambiar la implementación
+ de algunas de las operaciones de los repositorio, bastaría con hacer las
+ modificaciones pertinentes en los servicios sin que el código de los controlado
+res quedase afectado.
+\end_layout
+
+\begin_layout Standard
+Los servicios existentes en la aplicación son los siguientes:
+\end_layout
+
+\begin_layout Itemize
+Servicio dedicado a los usuarios
+\end_layout
+
+\begin_layout Itemize
+Servicio dedicado a las publicaciones
+\end_layout
+
+\begin_layout Itemize
+Servicio dedicado a los comentarios
+\end_layout
+
+\begin_layout Itemize
+Servicio dedicado a las imágenes
+\end_layout
+
+\begin_layout Itemize
+Servicio dedicado al servidor donde se aloja la aplicación
+\end_layout
+
+\begin_layout Itemize
+Servicio dedicado a las caras extraídas de las imágenes
+\end_layout
+
+\begin_layout Standard
+Dado que los servicios es una capa que se encuentra entre los controladores
+ y los repositorios, en la Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Diagrama-API-REST"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, se trata de la Capa Servicios (2) y se encarga de mediar entre el Servicio
+ Rest (1) y los DAOs (3) proporcionando la capa de abstracción de la que
+ ya se ha hablado.
+\end_layout
+
+\begin_layout Subsubsection
+Base de Datos
+\end_layout
+
+\begin_layout Standard
+En el capítulo de Análisis se introdujo un poco a la Base de Datos dado
+ es unos de los recursos externos utilizados.
+ Se utiliza un sistema de gestión de Bases de Datos derivado de SQL: MariaDB.
+ Una vez se configura debidamente en el VPS, en Spring se establece la configura
+ción global en el fichero 
+\begin_inset Quotes eld
+\end_inset
+
+application.properties
+\begin_inset Quotes erd
+\end_inset
+
+ para que la aplicación pueda conectarse a la Base de Datos.
+ Además, es necesario realizar una integración del tipo de Base de Datos
+ en Spring.
+ Para ello existe una dependencia que se encarga de integrar MariaDB en
+ Spring.
+\end_layout
+
+\begin_layout Standard
+Cabe destacar que se tienen dos bases de datos, una usada para el desarrollo
+ en local, para pruebas.
+ Y otra para producción, usada en el despliegue de la aplicación.
+ Una vez más, para cambiar una Base de Datos por otra basta con indicarlo
+ en el fichero de configuración nombrado anteriormente
+\end_layout
+
+\begin_layout Standard
+Y por último, haciendo referencia a la Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Diagrama-API-REST"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, la Base de Datos (4) es el último destino para mantener la persistencia
+ de la información.
+ Siendo los DAOs (3) los encargados de administrar el almacenamiento de
+ dicha información.
+\end_layout
+
+\begin_layout Subsection
+Servicio de reconocimiento facial
+\end_layout
+
+\begin_layout Standard
+Antes de proceder a la descripción de cada una de las partes del algoritmo
+ de reconocimiento facial, es necesario aclarar una serie de cuestiones.
+ Para el reconocimiento facial, se hace uso del deep learning.
+ Antes de aclarar este concepto es necesario definir el Machine Learning:
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+before "El Machine Learning, como se ha visto, se describe a menudo como un tipo de técnicas de Inteligencia Artificial  donde las computadoras aprenden a hacer algo sin ser programadas para ello"
+key "DeepLearningBlogNeo"
+literal "false"
+
+\end_inset
+
+.
+ Se puede intuir que el Deep Learning será un tipo particular del Machine
+ Learning.
+ Ahora bien, el Deep Learning se puede definir de la siguiente manera: 
+\begin_inset CommandInset citation
+LatexCommand cite
+before "El Deep Learning lleva a cabo el proceso de Machine Learning usando una red neuronal artificial que se compone de un número de niveles jerárquicos"
+key "DeepLearningBlogNeo"
+literal "false"
+
+\end_inset
+
+.
+ Ambos conceptos han sido extraído de un Blog realizado por Carlos García
+ Moreno.
+ Dicho Blog pertenece a la empresa Indra, conocida empresa basada en la
+ tecnología y la consultoría.
+\end_layout
+
+\begin_layout Standard
+La biblioteca usada para el reconocimiento facial (face_recognition 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "FaceRecognitionLibrary"
+literal "false"
+
+\end_inset
+
+), hace uso del Deep Learning.
+ Esta biblioteca a su vez, hace uso de dlib.
+ Dlib es una biblioteca basada en el Deep Learning de código abierto y desarroll
+ada en C++ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Dlib"
+literal "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+En un primer momento, lo que se pretendía era que un controlador del servicio
+ de gestión de los servicios de la red social ejecutase un script de Python
+ que realizase la funcionalidad.
+ El problema es que esto no fue posible en un entorno web, por lo que fue
+ necesario la realización de un segundo servicio de reconocimiento facial.
+ Por otra parte, si se presta atención al repositorio de dicha librería
+ en GitHub 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "FaceRecognitionLibrary"
+literal "false"
+
+\end_inset
+
+ se puede ver que puede usarse junto con un framework web, en este caso
+ se usa Flask, el cual es muy parecido al usado en este caso.
+\end_layout
+
+\begin_layout Subsubsection
+Algoritmo
+\end_layout
+
+\begin_layout Standard
+Como ya se ha dicho, la biblioteca Face Recognition no necesita ser entrenada
+ para realizar su cometido.
+ Por lo que basta con proporcionarle una foto y esta nos devolverá las posicione
+s de la cara (en píxeles) en la foto.
+ En la Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Diagrama-de-actividad"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ podemos ver el algoritmo que se sigue a la hora de subir una foto, representado
+ mediante un diagrama de actividad se ha incluido el lado cliente para poder
+ explicar mejor la utilidad de la API en una aplicación web.
+ El algoritmo que se sigue es el siguiente, teniendo en cuenta la Figura
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Diagrama-de-actividad"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Enumerate
+El usuario se dispone a subir una foto
+\end_layout
+
+\begin_layout Enumerate
+Se muestra una vista previa de la foto
+\end_layout
+
+\begin_layout Enumerate
+Se piden las caras al lado servidor.y si es posible, se piden también sugerencias
+\end_layout
+
+\begin_layout Enumerate
+El lado servidor devuelve caras y puede (o no) devolver sugerencias
+\end_layout
+
+\begin_layout Enumerate
+El lado cliente dibuja las caras en la vista previa, y sugerirá al usuario
+ si es posible
+\end_layout
+
+\begin_layout Enumerate
+El usuario etiqueta las caras con los usuarios y se lo comunica al lado
+ servidor a través del lado cliente
+\end_layout
+
+\begin_layout Enumerate
+El usuario, si está conforme, confirmara la subida de la foto
+\end_layout
+
+\begin_layout Enumerate
+Vuelta al paso 1.
+\end_layout
+
+\begin_layout Standard
+Ahora bien, cabe decir, que el lado servidor devolverá caras siempre y cuando
+ existan caras en la foto.
+ Si no existen caras en la foto, no se devolverán, además de no devolver
+ sugerencias como es obvio.
+ Si es posible devolver caras, el servidor devolverá caras además de sugerencias
+ dependiendo de las fotos subidas anteriormente por el usuario.
+ El algoritmo aprende de las caras que el usuario ha registrado anteriormente.
+ Por lo que, si el usuario sube su primera foto a la aplicación, es posible
+ que el servidor devuelva caras, pero no devolverá en ningún caso sugerencias,
+ dado que no tiene registro de fotos y por tanto no tendrá caras registradas.
+ El usuario solo podrá etiquetar caras con otros usuarios si y solo si estos
+ usuarios pertenecen a su lista de amigos.
+ En otro caso, no será posible etiquetar.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename FaceAlgorithm.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Diagrama de actividad de la subida de fotos
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Diagrama-de-actividad"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Además, el algoritmo es capaz de mejorar en función de la actividad del
+ usuario en la aplicación, es decir, mientras más amigos tenga el usuario
+ y más fotos suba con etiquetas, el sistema irá aprendiendo a realizar prediccio
+nes más fieles con respecto a sus amigos.
+ 
+\end_layout
+
+\begin_layout Subsubsection
+Controladores
+\end_layout
+
+\begin_layout Standard
+Una vez se ha hablado sobre cómo funciona el algoritmo de reconocimiento,
+ se procede a hablar de la funcionalidad que hace posible que todo funcione
+ correctamente.
+ Se tienen dos controladores principales:
+\end_layout
+
+\begin_layout Itemize
+El controlador encargado de proporcionar caras y sugerencias si es posible.
+ Haciendo referencia a la Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Diagrama-de-actividad"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, este método se corresponde con las actividades (4) y (6).
+ Al principio, se encarga de extraer las posiciones de las caras, pero antes
+ de devolver las posiciones correspondientes, comprueba si hay sugerencias.
+ Por lo que, por cada cara que se encuentra en la foto, se busca en el directori
+o de caras de las amistades del usuario con el objetivo de encontrar alguna
+ coincidencia y así poder hacer sugerencias.
+ Por lo que a la vuelta, se devuelve en formato JSON, las posiciones de
+ las caras (si se encuentran la foto enviada) y las sugerencias de dicha
+ cara (si se se han encontrado sugerencias de la cara).
+\end_layout
+
+\begin_layout Itemize
+El controlador encargado de enlazar caras con usuarios.
+ Una vez que las posiciones de las caras llegan al lado cliente y son pintadas
+ para que el usuario se encargue de etiquetar las caras con los nombres
+ de usuario de sus amistades (actividades (5), (6) y (7) en la Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Diagrama-de-actividad"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+), es necesario que el sistema sepa qué cara se corresponde con qué usuario.
+ Por lo que una vez se ha etiquetado (actividad (9) en la Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Diagrama-de-actividad"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+), se realiza la petición para enlazar las caras con usuario, enviando al
+ lado servidor desde el lado cliente, la posición de la cara en la foto,
+ la foto en cuestión y el usuario que se encuentra en esa cara (actividades
+ (10) y (11) en la Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Diagrama-de-actividad"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Subsubsection
+CORS
+\end_layout
+
+\begin_layout Standard
+Al igual que ocurría en el servicio de gestión de la red social es necesario
+ realizar la configuración pertinente del mecanismo CORS (Intercambio de
+ Recursos de Origen Cruzado) para ello se desarrolla lo que se denomina
+ un decorador de Python.
+ Un decorador de Python es básicamente una función que es usada para extender
+ el comportamiento de otra función, sin modificar en nada a dicha función.
+ Por lo que, se realiza un decorador para los 
+\emph on
+endpoints
+\emph default
+ que se tienen en el servicio que realice la configuración adecuada, para
+ así poder realizar una comunicación exitosa con el lado cliente
+\end_layout
+
+\begin_layout Subsubsection
+Verificación de JWT
+\end_layout
+
+\begin_layout Standard
+En la sección anterior, se habló de OAuth2.0 y de los JWT que se usan para
+ la autenticación del usuario en el sistema.
+ Dado que el servicio es externo a Spring, es necesario comprobar que el
+ usuario que accede a los recursos esta autenticado.
+ Por lo que, haciendo uso de la librería PyJWT se realiza una validación
+ del token que llega desde el lado cliente.
+ Y se comprueba que el usuario exista en el sistema.
+ Si todo va bien, se le permite al lado cliente acceder a los recursos del
+ lado servidor.
+\end_layout
+
+\begin_layout Standard
+Atendiendo a la Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Flujo-de-datos"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, una vez se ha completado el flujo, el lado cliente usa este token para
+ comunicarse directamente con el servicio de reconocimiento facial, este
+ servicio se encarga de validar el token gracias a la librería que se ha
+ especificado anteriormente.
+ Una vez se ha autenticado correctamente el usuario podrá hacer uso de los
+ recursos prestados por el servicio y se procedería al intercambio de datos
+ visto en la Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Diagrama-de-actividad"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsubsection
+Servidor multi-hilo
+\end_layout
+
+\begin_layout Standard
+Como se ha visto, el framework Bottle provee toda la funcionalidad necesaria
+ para la construcción del servicio de reconocimiento facial.
+ Pero como se puede comprobar en la documentación de dicha herramienta,
+ no provee la funcionalidad necesaria para hacer que la aplicación atienda
+ a mas de una petición concurrentemente.
+ Por lo que, fue necesaria otra librería que le provea a Bottle esa funcionalida
+d de la que carece.
+ En la documentación de Bottle se recomiendas varias librerías capaces de
+ realizar dicha funcionalidad como se ve en la Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Tabla-de-adaptadores"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, se eligió CherryPy como librería para realizar esta función.
+ Como se pueden ver en la Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Tabla-de-adaptadores"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, dicha librería es bastante estable y realiza la función que necesitamos.
+ Además, en un primer momento se optó por el uso de paste, da dado que ademas
+ de la estabilidad, ah sido testado y probado, pero carece de documentación
+ consistente, por lo que se optó por CherryPy.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename TablaAdaptadoresBottle.PNG
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Tabla de adaptadores para Bottle 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Tabla-de-adaptadores"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+Métricas
+\end_layout
+
+\begin_layout Standard
+En este capítulo se van a explicar las medidas que se han acumulado durante
+ el desarrollo del proyecto.
+ En primer lugar se va a exponer un diagrama de Gantt, para poder reflejar
+ el tiempo empleado en cada una de las fases del desarrollo de este proyecto.
+ Por otra parte, se van a exponer una serie de medidas que se han realizado
+ sobre la aplicación web, relativas a cobertura de código, vulnerabilidades,
+ etc.
+\end_layout
+
+\begin_layout Section
+Tiempo empleado en el desarrollo del proyecto
+\end_layout
+
+\begin_layout Standard
+Como se puede apreciar en la Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Diagrama-de-Gantt"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, se han seguido las fases del desarrollo del software, dividiendo la ultima
+ fase en dos periodos diferentes dentro del diagrama de Gantt.
+ Por lo que tenemos:
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Análisis
+\series default
+.
+ Fase crítica en el desarrollo del proyecto, esto supuso que se fuese minuciosos
+ a la hora de extraer los requisitos (tanto funcionales como no funcionales),
+ esto justifica que se necesitase casi un mes para poder pasar al diseño
+ de la aplicación web.
+ Se ha decidido dividir en esta fase en dos subtareas:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\series bold
+Análisis de los requisitos
+\series default
+.
+ Dicha subtarea ha tenido una duración de 13 días, en ella se han recogido
+ todos los requisitos funcionales y no funcionales de la aplicación.
+ Era consciente de que en base a estos requisitos se iba a construir la
+ totalidad del proyecto, esto supuso un gasto de tiempo bastante alto, como
+ se puede comprobar en el diagrama.
+ Era necesario tener controlado y bien definidos los requisitos que se deben
+ de cumplir en la aplicación web.
+ Una equivocación en esta fase supondría que tener volver desde una fase
+ mas tardía en el proyecto a solucionar algún requisito mal definido.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Especificación
+\series default
+.
+ Esta subtarea duró el tiempo restante de la fase de análisis: 11 días.
+ Cuando se tuvo una definición clara de los requisitos, se pasó a realizar
+ el documento de especificación de requisitos.
+ Separando entre requisitos funcionales y no funcionales, con el objetivo
+ de realizar un diagrama de casos de uso en función de los requisitos funcionale
+s.
+ Además fue necesario la estructuración de los requisitos con el objetivo
+ de conseguir la compresión, preparación, modificación y el mantenimiento.
+ El fin era conseguir una primer aproximación al diseño.
+ Cabe destacar que la duración se ve justificada a lo complicado que resulta
+ en algunas ocasiones la separación de los requisitos funcionales y no funcional
+es.
+ Resulta complicado la separación entre lo funcional y no funcional e identifica
+r los que se refieren al sistema como un todo.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+Diseño y arquitectura
+\series default
+.
+ Una vez el análisis se completó, se procedió al diseño de la aplicación.
+ Fase del proyecto que supone la base sobre la cual se va a construir la
+ implementación de la aplicación.
+ He decidido dividir esta fase en tres subtareas:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\series bold
+Elección del hardware.
+ 
+\series default
+Esta tarea sin duda ha sido de las mas cortas de todo el proceso de desarrollo:
+ 2 días.
+ Dado que ya se poseían de antemano el hardware necesario, no fue muy difícil
+ la elección del hardware necesario para el desarrollo.
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Elección del software.
+ 
+\series default
+En cambio, esta tarea necesitó más tiempo: 7 días.
+ El tiempo empleado para seleccionar el software necesario para el desarrollo
+ se ve justificado en el capítulo de diseño e implementación, fueron necesarias
+ multitud de herramientas para la realización exitosa del proyecto.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Arquitectura
+\series default
+.
+ En el caso de la arquitectura, esta fue la subtarea que ha marcado el fin
+ de la fase y sobre la fue necesaria una gran cantidad de tiempo: 13 días.
+ Aunque fue posible solapar esta tarea con la tarea anterior, dado que me
+ fue posible empezar a realizar algunos bocetos sobre la arquitectura del
+ proyecto.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+Implementación.
+ 
+\series default
+Cuando la fase de diseño fue completada y estuvo definida correctamente
+ la arquitectura, se procedió a la realización de la aplicación.
+ Esta fase es la más larga del proceso, más de un mes de duración: 32 días.
+ Se ha dividido esta fase en dos grandes subtareas:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\series bold
+Implementación del servicio de gestión de la lógica de la aplicación.
+ 
+\series default
+Esta subtarea de la fase de implementación fue la que mas tiempo llevo,
+ dado que la complejidad de esta parte de la aplicación era mucho mayor
+ que la subtarea siguiente.
+ Esta tarea ocupo todo el tiempo que dura la fase de implementación: 32
+ días.
+ Esto es debido es que esta parte de la aplicación contiene gran parte de
+ la funcionalidad de la aplicación.
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Implementación del servicio de reconocimiento facial.
+ 
+\series default
+Subtarea que ha tenido una duración total de 11 días.
+ Es cierto que la duración es un tanto extensa, pero fue posible trabajar
+ paralelamente en ambas partes de la aplicación, como se puede ver en el
+ diagrama.
+ Esto se debe a que las dos partes de la aplicación son prácticamente independie
+ntes entre si.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+Pruebas.
+ 
+\series default
+Fase del desarrollo que ha tenido una duración de 17 días.
+ Esta fase no ha sido dividida como las anteriores.
+ Tenemos la siguiente subtarea:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\series bold
+Realización de test unitarios.
+ 
+\series default
+Subtarea que ha supuesto la totalidad de la aplicación.
+ Fue necesario emplear mas de dos semanas en esta fase, porque se quería
+ proporcionar una cobertura del código de más del 80%.
+ Por lo que se procedió a la realización de una serie de test unitarios
+ que pudiesen cubrir la mayor parte del código.
+ Más adelante se entrará más en detalle sobre la realización de las pruebas.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+Documentación.
+ 
+\series default
+El fin de las pruebas dio paso a la documentación de la aplicación.
+ Esta fase tuvo una duración total de 18 días.
+ Dicha fase ha sido dividida en tres subtareas.
+ Entrando más en detalle:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\series bold
+Organización de las clases.
+ 
+\series default
+Subtarea con una duración total de 5 días.
+ Tarea con escasa duración debido a que no se fue para nada una dificultad
+ ordenar el código fuente.
+ Dado que se tenían las herramientas necesarias para poder llevar a cabo
+ dicho proceso de organización.
+ Se procedió a la organización de las clases del proyecto en paquetes ordenados
+ por tipos.
+ Esta organización se puede apreciar en la Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Estructura-del-proyecto"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Esto sería en el caso del servicio de gestión de la lógica de la aplicación.
+ En el caso de Python, no fue necesaria prácticamente ninguna organización,
+ dado que la totalidad de la aplicación se encuentra en un solo fichero
+ organizado por controladores.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Configuración de Swagger para la generación de la documentación.
+ 
+\series default
+En cuanto a la documentación del servicio de gestión de la lógica de la
+ aplicación, como se ha dicho en capítulos anteriores, se ha utilizado la
+ herramienta Swagger para la generación automática de la documentación ordenada
+ por controladores.
+ Fue necesario la configuración de Swagger para poder realizar dicha generación.
+ Esto tuvo una duración de 5 días.
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Incluir comentarios en el código fuente.
+ 
+\series default
+Subtarea más importante de esta fase del desarrollo.
+ Sobre todo para futuras fases del desarrollo, para asegurar el mantenimiento
+ de la aplicación.
+ Por ello, se ha dedicado más tiempo en ella que en las demás subtareas
+ de esta fase: 10 días.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+Despliegue.
+ 
+\series default
+Una vez las fases anteriores se dieron por finalizadas, era hora de poner
+ la aplicación en producción con el objetivo de que el lado cliente haga
+ uso de ella.
+ Esta fase tiene una duración total de casi un mes: 26 días.
+ Esto se debe a que fueron necesarias la realización de bastantes subtareas
+ para tener la aplicación preparada para que el lado cliente pueda obtener
+ los servicios que necesita.
+ Dicha subtareas son:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\series bold
+Preparar aplicación para el despliegue.
+ 
+\series default
+Como ya se sabe de capítulo anteriores del documento, el proyecto usa Maven
+ para la gestión de las dependencias.
+ Maven da la posibilidad de empaquetar la aplicación en un solo archivo,
+ con el objetivo de proporcionarlo a Tomcat para su posterior despliegue.
+ Tomcat necesita que la aplicación empaquetada esté configurada apropiadamente
+ para que se pueda ser desplegada.
+ Esto tuvo una duración de 2 días.
+ La duración es escasa debido a que Spring Tool Suite permite realizar la
+ configuración a través de la interfaz gráfica de forma sencilla.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Enlazar el dominio con la IP del servidor.
+
+\series default
+ Una vez se contrató el servidor, como se ha especificado en capítulos anteriore
+s, fue necesario la contratación de un dominio con el objetivo de cifrar
+ los datos mediante SSL y poder utilizar el protocolo HTTPS.
+ Cabe destacar que fue necesario esperar entre 24 y 48 horas para que el
+ registro de tipo A se propagase por los servidores DNS.
+ Por todo esto, esta subtarea ha tenido una duración total de 2 días.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Cifrado SSL.
+ 
+\series default
+Subtarea directamente relacionada con la subtarea anterior con una importancia
+ significativa.
+ Una vez se enlazó la IP del servidor con el dominio, se pudo proceder al
+ cifrado SSL de los datos.
+ En este caso fue sencillo gracias a Let's Encrypt, el cual proporciona
+ un bot capaz de realizar el encriptado de la información siguiendo una
+ serie de pasos.
+ Una vez se cifraron los datos mediante SSL, se pudo proceder a utilizar
+ el protocolo HTTPS.
+ Esta tarea tuvo una duración de 7 días.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Configuración del proxy de Apache.
+ 
+\series default
+Subtarea que se encuentra relacionada con las dos subtareas anteriores.
+ Una vez se realizó la subtarea anterior, con el objetivo de eliminar el
+ puerto donde escuchaba la aplicación por cuestiones de seguridad, se configuró
+ el proxy de Apache para que todo el tráfico de datos fuese redirigido a
+ través del proxy y así poder eliminar el puerto de la URL.
+ Para ello, fue necesario una duración de 8 días.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Despliegue de la Base de Datos.
+ 
+\series default
+Para el despliegue de la Base de Datos fue necesario instalar MySQL en el
+ servidor y posteriormente crear la Base de Datos junto con los permisos
+ pertinentes con el objetivo de que no fuese accesible desde cualquier máquina.
+ Subtarea que ha durado un total de 13 días.
+ Periodo un tanto extenso debido a que se realizaron una serie de configuración
+ en la Base de Datos para su uso por parte de Spring.
+ Cabe recordar que fue necesario la integración de MariaDB en Spring, lo
+ que retrasó bastante el fin de esta subtarea.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Puesta en producción de la aplicación.
+ 
+\series default
+Una vez las subtareas anteriores se completaron fue posible poner la aplicación
+ en producción.
+ Esta subtarea ha tenido una duración total de 7 días.
+ Duración un tanto extensa debido a que fueron necesarias comprobaciones
+ por parte del lado cliente de que todo funcionaba correctamente.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+Mantenimiento
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\series bold
+Corrección de errores o bugs.
+ 
+\series default
+Una vez la aplicación fue desplegada, se reportaron varios errores y bugs
+ por parte del lado cliente que fue necesario solucionar.
+ Es obvio destacar, que dicha aplicación se encuentra en continuo desarrollo
+ a día de hoy en cuestión de solución de errores y bugs pero en el momento
+ del despliegue se detectaron errores críticos que fue necesario solucionar
+ con la mayor brevedad posible, lo cual duró 6 días.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Desarrollo de nuevas funcionalidades.
+ 
+\series default
+Pasa algo parecido que con la subtarea anterior, la cual se ha realizado
+ paralelamente con ella, la aplicación sigue incluyendo nuevas funcionalidades
+ a día de hoy.
+ Pero el lado cliente, requería de ciertas funcionalidades por temas de
+ comodidad, por lo que fue necesario un gasto de tiempo de 12 días.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename GanttTFG.jpg
+	scale 25
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Diagrama de Gantt sobre las fases del desarrollo.
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Diagrama-de-Gantt"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Métricas relativas a la implementación
+\end_layout
+
+\begin_layout Standard
+Como se dijo en el apartado de herramientas utilizadas, se utiliza SonarQube
+ para la realización del análisis del código fuente.
+\end_layout
+
+\begin_layout Standard
+En la Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Primer-análisis-de"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ se muestra el primer análisis realizado por SonarQube a pesar de que en
+ la Figura se puede ver como no es el primer análisis que se realiza, esto
+ se debe a que se realizó un primer análisis de prueba para comprobar que
+ la herramienta analizaba los ficheros que se debían de analizar.
+ Tenemos cuatro puntos a analizar con respecto a la Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Primer-análisis-de"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Enumerate
+Vulnerabilidades.
+ Las vulnerabilidades presentes en el código fuente son:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Uso de funciones que devuelven un valor y no hacer nada con ese valor devuelto
+\end_layout
+
+\begin_layout Enumerate
+Uso de un logger en el caso de que se produzca una excepción
+\end_layout
+
+\begin_layout Enumerate
+Utilización de objetos POJO o DTO en lugar que los modelos definidos en
+ el proyecto
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Code Smells.
+ Este punto hace referencia a fallos en el código que actualmente no suponen
+ un problema, pero que podría serlo en un futuro.
+ En este primer análisis, se detectaron estos errores en el código fuente:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Eliminar importaciones de librerías que no se usan
+\end_layout
+
+\begin_layout Enumerate
+Definición de constantes para literales que se repiten N veces
+\end_layout
+
+\begin_layout Enumerate
+Eliminar código fuente comentado
+\end_layout
+
+\begin_layout Enumerate
+Reemplazo de algunas anotaciones por otras que realizan la misma función
+ en menos código
+\end_layout
+
+\begin_layout Enumerate
+Eliminar el tipado en la notación de diamante en algunos métodos.
+\end_layout
+
+\begin_layout Enumerate
+Reemplazar los System.out por el uso de un Logger
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Cobertura de código.
+ A pesar de ser el primer análisis realizado en la aplicación, cabe destacar
+ que este análisis fue realizado después de la realización de las pruebas
+ unitarias de la aplicación y a pesar de que no pasa el control de calidad
+ de SonarQube, se tiene un 78% cobertura de código por parte de los test
+ unitarios.
+ Además, en este punto del análisis, no se habían excluido los ficheros
+ de configuración de la aplicación, el fichero referente a desplegar la
+ aplicación en local, los ficheros referentes a los repositorios que no
+ dejan de ser interfaces vaciás, dado que los repositorios implementan la
+ interfaz encargada de realizar las operaciones básicas contra la Base de
+ Datos.
+\end_layout
+
+\begin_layout Enumerate
+Duplicación de código.
+ En el primer análisis ya se tuvo un tanto por ciento de publicación bastante
+ bajo.
+ Este resultado no es novedad en una aplicación de este tipo, resulta bastante
+ complicado que dos controladores cualquiera que responden a dos peticiones
+ HTTP cualquiera se parezcan.
+ Aún así, en la aplicación existe un pequeño indice de duplicación correspondien
+te a dos bloques de código correspondientes a controladores referentes a
+ la búsqueda de información, dado que el código es idéntico hasta que se
+ procede a la búsqueda por un determinado atributo.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename PrimerAnalisisAPI.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Primer análisis de SonarQube sobre la aplicación 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Primer-análisis-de"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Una vez se realizó el primer análisis con SonarQube, se procedió a solucionar
+ los fallos en el código.
+ Y se realizó un segundo análisis en el que se tuvo una mejora considerable
+ en todos los puntos descritos anteriormente.
+ 
+\end_layout
+
+\begin_layout Standard
+El segundo análisis se tiene en la Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Segundo-análisis-de"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ En este segundo análisis, me centré más en mejorar la cobertura de código
+ de los test unitarios, dado que existían bastantes porciones de código
+ que realizaban funcionalidades de mucha importancia en la aplicación.
+ Además.
+ dado que se han reducido las vulnerabilidades del código y los Code Smells,
+ la aplicación ha pasado el control de calidad de SonarQube.
+ Como se puede apreciar, no ha habido mejora alguna en los Code Smells,
+ dado que de cierta forma, son los menos urgentes a solucionar.
+ Tampoco en el caso de la duplicación, de momento se ha prescindido de mejorar
+ el tanto por ciento de duplicación, dado que se da concretamente en el
+ controlador encargado de la búsqueda de Usuarios.
+ Esto último se verá en el siguiente y último análisis.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename AnalisisCoberturaCodigo.jpg
+	scale 90
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Segundo análisis de SonarQube sobre la aplicación 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Segundo-análisis-de"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+En el tercer análisis visto en la Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Tercer-análisis-de"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Este último análisis trae consigo las mejoras definitivas con respecto
+ al código fuente.
+ Se han realizado las siguiente mejoras:
+\end_layout
+
+\begin_layout Itemize
+Se han solucionado todos las vulnerabilidades y los bugs en el código.
+ Como se precisó anteriormente, se ha incluido un logger en la aplicación
+ para mostrar excepciones.
+ Se han creado DTO o POJO en el proyecto, con el objetivo de no utilizar
+ los modelos que se han definido en el proyecto.
+ Además, existían una serie de funciones que devolvían un valor y no se
+ hacia nada con ello.
+ En el caso de este código, se trataba de funciones que daban permisos a
+ determinados ficheros y que devolvían un valor booleano indicando si el
+ permisos pudo ser modificado.
+\end_layout
+
+\begin_layout Itemize
+Se han solucionado la gran parte de los Code Smells.
+ En el caso de los Code Smells, se han eliminado las importaciones de librerías
+ que no tienen un uso en el código.
+ Se ha creado una clase de constantes con el objetivo de la utilización
+ reiterada de literales.
+ Se han eliminado grandes cantidades de código comentado que podía suponer
+ un problema.
+ Se han reemplazado las anotaciones 
+\begin_inset Quotes eld
+\end_inset
+
+@RequestMapping
+\begin_inset Quotes erd
+\end_inset
+
+ por anotaciones propias de cada método HTTP, por ejemplo 
+\begin_inset Quotes eld
+\end_inset
+
+@GetMapping
+\begin_inset Quotes erd
+\end_inset
+
+.
+ Se ha eliminado el tipo en la notación de diamante por no ser necesario
+ en uno de los lados de la asignación para la declaración de objetos.
+ Se ha usado, al igual que con las excepciones, con objetivo de depurar
+ el código el uso de un logger en lugar de mostrar por salida estándar la
+ información haciendo uso de 
+\begin_inset Quotes eld
+\end_inset
+
+System.out
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Se ha conseguido una cobertura de casi el 90%.
+ Se han añadido test unitarios para aumentar la cobertura del código teniendo
+ el tanto por ciento que se ve en la Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Tercer-análisis-de"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+Se ha conseguido una duplicación del 0%.
+ Con objetivo de llegar al 0% de duplicación en comparación con los análisis
+ anteriores, se realizaron cambios en los controladores para que no se repitiese
+n los dos bloques de código.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Captura.PNG
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Tercer análisis de SonarQube sobre la aplicación.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Tercer-análisis-de"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+Conclusiones
+\end_layout
+
+\begin_layout Standard
+En este último capítulo se van a presentar las conclusiones del Trabajo
+ de Fin de Grado junto con las posibles continuaciones del mismo.
+ Se expondrán dos secciones donde se explicarán estos temas.
+\end_layout
+
+\begin_layout Section
+Objetivos cumplidos
+\end_layout
+
+\begin_layout Standard
+En general se puede concluir que se han cumplido todos los objetivos.
+ El resultado se puede descargar desde el siguiente enlace a GitHub: 
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+https://github.com/PatriciadeGregorio/TFG_Back
+\end_layout
+
+\end_inset
+
+.
+ A continuación se describe como se han cumplido cada uno de los objetivos
+ específicos.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Proporcionar al lado cliente una serie de servicios que le provea de los
+ recursos que necesita.
+ 
+\series default
+Se han construido dos servicios.
+ Uno de ellas desarrollada en Java con ayuda de Spring Framework.
+ Dicho servicio contiene el 80% de la funcionalidad y es capaz de proporcionar
+ al lado cliente la gran parte de los recursos que necesita.
+ El otro servicio, desarrollado en Python mediante un framework web llamado
+ Bottle, contiene una mejora relacionada con al Visión Artificial, de la
+ cual se hablara en objetivos siguientes.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Proporcionar al lado cliente una documentación consistente acerca de la
+ aplicación.
+ 
+\series default
+Se ha proporcionado al lado cliente una documentación consistente.
+ En el caso del servicio encargado de la gestión, se ha proporcionado una
+ documentación generada por Swagger.
+ Por otra parte, en el caso del servicio de reconocimiento facial se ha
+ generado la documentación gracias a Sphinx.
+ En ambos casos, se ha cumplido el objetivo de proporcionar la documentación
+ al lado cliente.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Diseñar un servicio sencillo e intuitivo que ofrezca los servicios de red
+ social.
+ 
+\series default
+Este objetivo se cumple con el desarrollo del servicio de gestión de la
+ red social, dado que en este TFG se ha desarrollado un servicio REST capaz,
+ no solo de atender al lado cliente, sino de proporcionar codigos de error
+ que permiten saber qué ha ido mal en las peticiones.
+ El lado cliente tiene bien definidos los 
+\emph on
+endpoints 
+\emph default
+dado que se ha proporcionado una buena documentación para ambos servicios
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Desarrollar un esquema de base de datos.
+ 
+\series default
+Meta conseguida gracias a la arquitectura que se ha elegido para los servicios.
+ Como ya se comentó, el servicio encargado de la gestión de la aplicación
+ se desarrolla en Spring, utilizando el módulo Spring Data, el cual se encarga
+ de realizar la traducción de modelos de datos a entidades en la Base de
+ Datos.
+ Además, gracias a las anotaciones propias de Spring fue posible enlazar
+ las entidades generando el esquema que se puede en el diagrama Entidad-Relación
+ de la Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Diagrama-Entidad-Relación"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Desarrollar un sistema de visión artificial que permita el reconocimiento
+ facial en las personas que aparezcan en las fotos subidas a la red social.
+ 
+\series default
+Objetivo cumplido gracias al uso de la biblioteca de reconocimiento facial
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "FaceRecognitionLibrary"
+literal "false"
+
+\end_inset
+
+ y al uso de Python.
+ El sistema es capaz de realizar exitosamente el reconocimiento de caras
+ en una imagen, dado que tiene una precisión de casi el 100% 
+\begin_inset CommandInset citation
+LatexCommand cite
+before "Built using dlib's state-of-the-art face recognition built with deep learning. The model has an accuracy of 99.38% on the Labeled Faces in the Wild benchmark."
+key "FaceRecognitionLibrary"
+literal "false"
+
+\end_inset
+
+.
+ Además, dicho sistema es capaz de aprender de las caras que ha reconocido
+ hasta el momento para un determinado usuario en función de su actividad
+ en la aplicación.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Desarrollar un servicio para el sistema de visión artificial de reconocimiento
+ facial.
+ 
+\series default
+En relación al objetivo anterior, una vez se tuvo el sistema funcionando,
+ se utilizó el microframework web Bottle para poder construir una aplicación
+ web accesible por el lado cliente.
+ Asi que se habilitaron dos 
+\emph on
+endpoints 
+\emph default
+para que el cliente pudiera hacer uso de la funcionalidad desarrollada en
+ el objetivo anterior.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Realizar pruebas de los servicio desarrollados.
+ 
+\series default
+Una vez se desarrollaron ambos servicios, se procedió a las pruebas de los
+ mismos mediante por una parte, la realización de test unitarios en el caso
+ del servicio desarrollado para la gestión de la aplicación y el uso de
+ WebTest 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "WebTestPython"
+literal "false"
+
+\end_inset
+
+ en el caso del servicio de reconocimiento facial.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Entender en profundidad lo que supone desarrollar un software desde cero.
+ 
+\series default
+Como se dijo en el capítulo de Introducción, concretamente en la sección
+ de Motivación, se pretende comprender lo que es el desarrollo de un software
+ desde la fase de análisis hasta el despliegue de la aplicación.
+ Este objetivo se ha cumplido como se puede comprobar en este documento,
+ en el que se ha desarrollado un software que ha pasado por todas las fases
+ de desarrollo de software
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Tener un entorno en local para el desarrollo y un entorno de producción
+ para probar lo desarrollo de cara al cliente.
+ 
+\series default
+En el caso del servicio encargado de la gestión de la aplicación, se utiliza
+ Spring Tool Suite para el desarrollo en local y para el empaquetamiento
+ de la aplicación con el objetivo de poner en producción la aplicación.
+ Se tiene una Base de Datos que tendrá información relativa al desarrollo
+ en local.
+ Por otra parte, el entorno en producción se tiene un VPS el cual tiene
+ instalado Apache Tomcat para el despliegue de la aplicación, aparte de
+ una Base de Datos para almacenar la información en producción.
+ En otro orden de cosas, en el caso de la servicio de reconocimiento de
+ caras, se tiene un desarrollo en local en PyCharm usando una Base de Datos
+ para el desarrollo en local.
+ Al igual que la API en Spring, se despliega la aplicación en el VPS con
+ ayuda del framework web Bottle para la puesta en producción.
+ Además de esto, se utiliza CherryPy para que el servidor desplegado por
+ Bottle sea capaz de atender mas de una petición concurrentemente.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Búsqueda y uso de herramientas que hagan posible la realización de los objetivos
+ nombrados hasta ahora.
+ 
+\series default
+Como ya se comentó en el capítulo de Diseño e Implementación, concretamente
+ en la sección de Herramientas utilizadas, se han usado varias herramientas
+ para el correcto desarrollo de la aplicación.
+ Y llegados a este punto, se puede ver claramente como este objetivo se
+ ha cumplido completamente, porque se ha desarrollado exitosamente la aplicación
+ gracias a las herramientas utilizadas.
+ Entre ellas se pueden destacar: Java, Spring, Python, Face Recognition,
+ MySQL y MariaDB.
+\end_layout
+
+\begin_layout Section
+Futuros trabajos
+\end_layout
+
+\begin_layout Standard
+Una vez se ha terminado el desarrollo de proyecto se han tenido una serie
+ de consideraciones en relación a incluir una serie de funcionalidades en
+ la aplicación en el futuro.
+ Dichas funcionalidades se van a detallar a continuación.
+\end_layout
+
+\begin_layout Standard
+En primer lugar, una mejora urgente que se debería realizar en la aplicación
+ es un aumento de los recursos en términos de GPU del servidor.
+ El servicio de reconocimiento facial hace un uso intensivo de la GPU del
+ servidor para el reconocimiento facial, y ya se ha tenido que realizar
+ una reducción de la resolución de las fotos para poder realizar el reconocimien
+to.
+\end_layout
+
+\begin_layout Standard
+Sería una buena práctica incluir test de integración con el objetivo de
+ comprobar con exactitud si la capa de los repositorios o DAOs junto con
+ la capa de los servicios están debidamente integradas con la totalidad
+ de la aplicación, ya que actualmente solo se tienen test unitarios comprobando
+ la cobertura del código.
+\end_layout
+
+\begin_layout Standard
+Haciendo hincapié en el servicio encargado de la gestión, sería de una gran
+ ayuda para el lado cliente que se incluyese la posibilidad de que, una
+ vez registrado en el servidor, fuese posible realizar una confirmación
+ vía email o mediante SMS.
+ Además también se debería de incluir la funcionalidad referida a la recuperació
+n de credenciales, lo cual está directamente relacionada con la funcionalidad
+ que se ha mencionado anteriormente.
+\end_layout
+
+\begin_layout Standard
+Dado que el proyecto está diseñado para ser usado desde una aplicación cliente
+ de carácter social, una funcionalidad que estaría bien incluir sería la
+ posibilidad de tener un servicio de mensajería instantánea.
+ Con la posibilidad de que los usuarios fuesen capaces de tener un canal
+ privado para hablar unicamente con una persona o ser capaces de crear grupos
+ donde poder hablar con varias personas a la vez.
+\end_layout
+
+\begin_layout Standard
+Actualmente, se tiene todo el proyecto alojado en el mismo servidor, la
+ Base de Datos usada para desarrollo y producción y los dos servicios están
+ alojados en el mismo servidor.
+ Por cuestiones de seguridad, una muy buena mejora seria alojar las aplicaciones
+ en distintos servidores.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename MicroservicesSpring.jpg
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Microservicios en Spring 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Microservicios-en-Spring"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Una vez más, hablando del servicio encargado de la lógica de la aplicación,
+ se puede incluir una mejora considerable a la aplicación.
+ Actualmente, el servicio está construida como un monolito, donde conviven
+ todos los controladores que se encargan de atender las peticiones relacionadas
+ con los diferentes modelos de la aplicación (usuarios, comentarios, publicacion
+es, imágenes y caras).
+ Teniendo en cuenta esto, sería una buena práctica crear microservicios
+ en el cada uno se encargue de atender las peticiones de cada modelo.
+ Por lo que si esta funcionalidad se pusiese en practica, se tendrían 5
+ microservicios, uno por cada modelo de la aplicación, cada uno con su propia
+ Base de Datos, sus repositorios y sus servicios.
+ En la Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Microservicios-en-Spring"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ extraída de un blog de Paul Chapman, un consultor senior del equipo de
+ Spring 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "SpringMicroservices"
+literal "false"
+
+\end_inset
+
+, se ve como el lado servidor tiene modularizado cada uno de los modelos,
+ separándolos por microservicios sin que eso afecte al lado cliente, que
+ va a seguir accediendo a los servicios que provee el lado servidor de la
+ misma forma.
+ De esta forma, si se incluyese esta mejora en la aplicación, aumentaría
+ la escalabilidad y la mantenibilidad de la aplicación sin que el usuario
+ se viese afectado.
+\end_layout
+
+\begin_layout Standard
+Continuando con la funcionalidad anterior y en relación con el servicio
+ de reconocimiento facial.
+ Actualmente, para poder acceder a este servicio es necesario utilizar un
+ 
+\emph on
+endpoint
+\emph default
+ diferente, esto significa que los servicios no están relacionadas entre
+ sí de ninguna forma, simplemente se cambia la ruta para acceder a una u
+ otra.
+ Una funcionalidad a incluir sería, utilizando los microservicios explicados
+ en el apartado anterior, realizar las llamadas referentes al servicio de
+ reconocimiento facial desde el servicio encargado de la gestión teniendo
+ obviamente un microservicio dedicado a las llamadas referentes al servicio
+ de reconocimiento facial, de manera que todo fuese homogéneo de cara al
+ lado cliente.
+\end_layout
+
+\begin_layout Section*
+\begin_inset Newpage cleardoublepage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset bibtex
+LatexCommand bibtex
+btprint "btPrintCited"
+bibfiles "bibliography"
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document
