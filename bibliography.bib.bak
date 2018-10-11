@@ -210,6 +210,8 @@
 }
 
 @Electronic{IoCContainerBaeldung,
+  title = {Intro to Inversion of Control and Dependency Injection with Spring},
+  url   = {https://www.baeldung.com/inversion-control-and-dependency-injection-in-spring},
 }
 
 @Comment{jabref-meta: databaseType:bibtex;}

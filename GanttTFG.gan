@@ -65,6 +65,7 @@
             <task id="116" name="Organización de las clases" color="#8cb6ce" meeting="false" start="2018-08-17" duration="6" complete="0" thirdDate="2018-04-23" thirdDate-constraint="0" expand="true"/>
             <task id="146" name="Incluir comentarios en el codigo fuente" meeting="false" start="2018-08-17" duration="7" complete="0" expand="true"/>
             <task id="119" name="Configuracion de Swagger para la generacion de la documentacion" meeting="false" start="2018-08-17" duration="4" complete="0" expand="true"/>
+            <task id="148" name="Configuración de Sphinx para la generación de la documentación" meeting="false" start="2018-08-17" duration="6" complete="0" expand="true"/>
         </task>
         <task id="27" name="Despliegue" color="#999999" shape="0,1,0,1,0,0,1,0,0,1,0,1,1,0,0,0" meeting="false" start="2018-08-28" duration="16" complete="0" thirdDate="2018-04-26" thirdDate-constraint="0" expand="true">
             <depend id="88" type="2" difference="0" hardness="Strong"/>
